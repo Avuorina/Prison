@@ -18,6 +18,8 @@
                 scoreboard objectives add _ dummy "汎用スコア"
             # SneakFrequency - スニーク頻度を保存するぞ
                 scoreboard objectives add SneakFrequency dummy "スニーク頻度"
+            # DoorOpenTimer - ドアが開く時間
+                scoreboard objectives add DoorOpenTimer dummy "ドアの開く時間"
 
 ## ロード完了
     tellraw @a [{"bold":true,"color":"aqua","text":"["},{"bold":true,"color":"white","text":"Info"},{"color":"aqua","text":"]"},{"bold":false,"color":"white","text":"世界が再読み込みされた。"}]
