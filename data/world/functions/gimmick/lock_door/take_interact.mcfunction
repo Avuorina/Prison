@@ -9,7 +9,7 @@
 
 ## 扉の鍵が合うかどうか
     execute as @e[tag=DoorInteracted] at @s run function world:gimmick/lock_door/put_key
-    
+
     ## RESET
     data remove entity @e[tag=DoorInteracted,limit=1] interaction
     tag @e[tag=DoorInteracted] remove DoorInteracted

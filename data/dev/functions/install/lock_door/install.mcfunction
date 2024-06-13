@@ -37,4 +37,3 @@
         execute if score @a[sort=nearest,limit=1] Direction matches 180 if entity @s[tag=DoorBig] run setblock ~1 ~ ~ iron_door[facing=south,half=lower,hinge=left]
         execute if score @a[sort=nearest,limit=1] Direction matches 180 if entity @s[tag=DoorBig] run setblock ~1 ~1 ~ iron_door[facing=south,half=upper,hinge=left]
         execute if score @a[sort=nearest,limit=1] Direction matches 180 if entity @s[tag=DoorBig] run summon interaction ~1 ~ ~ {width:1.1f,height:2f,Tags:["DoorInteract"]}
-        

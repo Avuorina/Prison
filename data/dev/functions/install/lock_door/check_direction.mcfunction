@@ -20,6 +20,6 @@
 
 ## 無いとは思うけどもしかしたら上記の条件の人がいるかもしれない
     execute unless score @a[sort=nearest,limit=1] Direction matches -180.. run say 合う方角がなかった。
-    
+
 # dev
     #tellraw @p {"score":{"name":"@a[sort=nearest,limit=1]","objective":"Direction"}}
