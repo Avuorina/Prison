@@ -1,6 +1,6 @@
-#>
+#> player:trigger/sneak_frequency
 #
-#
+# スニークで+10 毎tick -1
 #
 #
 
