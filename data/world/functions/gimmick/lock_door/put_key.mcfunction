@@ -15,7 +15,7 @@
         execute if block ~ ~ ~ yellow_concrete if entity @a[advancements={player:interact_door=true}] if predicate lib:daytime run tag @s add DoorCanEnter
     # 夜
         execute if block ~ ~ ~ yellow_concrete if entity @a[advancements={player:interact_door=true},nbt={SelectedItem:{id:"minecraft:leather_horse_armor"}}] unless predicate lib:daytime run tag @s add DoorCanEnter
-        
+
 ## ドアを開く
     scoreboard players set @s[tag=DoorCanEnter] DoorOpenTimer 40
     execute if entity @s[tag=DoorCanEnter] at @s[tag=DoorCanEnter] run setblock ~ ~-2 ~ redstone_torch
