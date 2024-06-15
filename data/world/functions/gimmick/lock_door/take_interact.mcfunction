@@ -8,7 +8,7 @@
     execute as @e[type=minecraft:interaction,distance=..10,nbt={interaction:{}},tag=DoorInteract,limit=1] run tag @s add DoorInteracted
 
 ## 扉の鍵が合うかどうか
-    execute as @e[tag=DoorInteracted] at @s run function world:gimmick/lock_door/put_key
+    execute as @e[tag=DoorInteracted] at @s positioned ~ ~2 ~ run function world:gimmick/lock_door/put_key
 
     ## RESET
     data remove entity @e[tag=DoorInteracted,limit=1] interaction
