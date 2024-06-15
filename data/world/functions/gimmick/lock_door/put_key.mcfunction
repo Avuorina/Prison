@@ -22,6 +22,10 @@
 ## マスターキー
     execute if entity @a[tag=DoorTarget,nbt={SelectedItem:{id:"minecraft:nether_star"}}] run tag @s add DoorCanEnter
 
+## ドアを開く資格がない者に報せを
+    execute as @s[tag=!DoorCanEnter] run playsound block.chest.locked block @a[tag=DoorTarget] ~ ~ ~ 0.2 2.0
+    execute as @s[tag=!DoorCanEnter] run tellraw @a[tag=DoorTarget] [{"color":"dark_gray","text":">"},{"color":"gray","text":">"},{"color":"white","text":" ドアが開かない！"}]
+
 ## RESET
     tag @a[tag=DoorTarget] remove DoorTarget
 

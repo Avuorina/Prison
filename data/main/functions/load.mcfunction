@@ -24,9 +24,28 @@
                 scoreboard objectives add InventoryCount dummy "持ってるアイテム数"
             # CautionTimer
                 scoreboard objectives add CautionTimer dummy "警告する時間"
+    ## チーム
+
+        ## 看守
+            team add Jailer "看守"
+            # modify
+                team modify Jailer color blue
+                team modify Jailer deathMessageVisibility never
+                team modify Jailer friendlyFire false
+                team modify Jailer nametagVisibility hideForOtherTeams
+                team modify Jailer seeFriendlyInvisibles true
+        ## 囚人
+            team add Prisoner "囚人"
+            # modify
+                team modify Prisoner color red
+                team modify Prisoner deathMessageVisibility never
+                team modify Prisoner friendlyFire true
+                team modify Prisoner nametagVisibility hideForOtherTeams
+                team modify Prisoner seeFriendlyInvisibles true
+
 
 ## 干渉できないようにできるエンティティを召喚
     function world:gimmick/summon_no.interference
 
 ## ロード完了
-    tellraw @a [{"bold":true,"color":"aqua","text":"["},{"bold":true,"color":"white","text":"Info"},{"color":"aqua","text":"]"},{"bold":false,"color":"white","text":"世界が再読み込みされた。"}]
+    tellraw @a [{"color":"dark_gray","text":">"},{"color":"gray","text":">"},{"bold":false,"color":"white","text":" "}]
