@@ -1,4 +1,4 @@
-#> world:gimmick/lock_door/take_interact
+#> world:gimmick/lock_door/interacted
 #
 # ドアに誰かが作用したぞ
 #
