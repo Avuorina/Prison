@@ -20,7 +20,7 @@
         execute if block ~ ~ ~ yellow_concrete if entity @a[tag=DoorTarget,nbt={SelectedItem:{id:"minecraft:leather_horse_armor"}}] unless predicate lib:daytime run tag @s add DoorCanEnter
 
 ## マスターキー
-    execute if entity @a[tag=DoorTarget,nbt={SelectedItem:{id:"minecraft:nether_star"}}] run tag @s add DoorCanEnter
+    execute if entity @a[nbt={SelectedItem:{id:"minecraft:echo_shard",count:1,components:{"minecraft:custom_model_data":2}}}] run tag @s add DoorCanEnter
 
 ## ドアを開く資格がない者に報せを
     execute as @s[tag=!DoorCanEnter] run playsound block.chest.locked block @a[tag=DoorTarget] ~ ~ ~ 0.2 2.0
