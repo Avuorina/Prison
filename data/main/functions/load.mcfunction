@@ -22,7 +22,7 @@
                 scoreboard objectives add DoorOpenTimer dummy "ドアの開く時間"
             # InventoryCount - 持ってるアイテム数
                 scoreboard objectives add InventoryCount dummy "持ってるアイテム数"
-            # CautionTimer
+            # CautionTimer - 警告する時間
                 scoreboard objectives add CautionTimer dummy "警告する時間"
     ## チーム
 
@@ -46,6 +46,10 @@
 
 ## 干渉できないようにできるエンティティを召喚
     function world:gimmick/summon_no.interference
+
+## エレベーターを召喚
+    # エレベーターを召喚
+        function world:gimmick/elevator/summon
 
 ## ロード完了
     tellraw @a [{"color":"dark_gray","text":">"},{"color":"gray","text":">"},{"bold":false,"color":"white","text":" "}]
