@@ -19,6 +19,18 @@
     # 夜
         execute if block ~ ~ ~ yellow_concrete if entity @a[tag=DoorTarget,nbt={SelectedItem:{id:"minecraft:leather_horse_armor"}}] unless predicate lib:daytime run tag @s add DoorCanEnter
 
+## 青の鍵
+    execute if block ~ ~ ~ blue_concrete if entity @a[tag=DoorTarget,nbt={SelectedItem:{id:"minecraft:echo_shard",count:1,components:{"minecraft:custom_model_data":3}}}] run tag @s add DoorCanEnter
+
+## 赤の鍵
+    execute if block ~ ~ ~ red_concrete if entity @a[tag=DoorTarget,nbt={SelectedItem:{id:"minecraft:echo_shard",count:1,components:{"minecraft:custom_model_data":4}}}] run tag @s add DoorCanEnter
+
+## 紫の鍵
+    execute if block ~ ~ ~ purple_concrete if entity @a[tag=DoorTarget,nbt={SelectedItem:{id:"minecraft:echo_shard",count:1,components:{"minecraft:custom_model_data":5}}}] run tag @s add DoorCanEnter
+
+## 緑の鍵
+    execute if block ~ ~ ~ green_concrete if entity @a[tag=DoorTarget,nbt={SelectedItem:{id:"minecraft:echo_shard",count:1,components:{"minecraft:custom_model_data":6}}}] run tag @s add DoorCanEnter
+
 ## マスターキー
     execute if entity @a[nbt={SelectedItem:{id:"minecraft:echo_shard",count:1,components:{"minecraft:custom_model_data":2}}}] run tag @s add DoorCanEnter
 
