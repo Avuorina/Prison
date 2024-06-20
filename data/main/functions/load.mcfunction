@@ -8,16 +8,11 @@
 
     ## スコアボード
 
-        ## トリガー系
-            # SneakTimer - スニークタイマー
-                scoreboard objectives add SneakTimer minecraft.custom:minecraft.sneak_time "スニークタイマー"
         ## その他
             # Direction - プレイヤーの方向を保存するぞ
                 scoreboard objectives add Direction dummy "方向"
             # _ - 汎用スコアボード
                 scoreboard objectives add _ dummy "汎用スコア"
-            # SneakFrequency - スニーク頻度を保存するぞ
-                scoreboard objectives add SneakFrequency dummy "スニーク頻度"
             # DoorOpenTimer - ドアが開く時間
                 scoreboard objectives add DoorOpenTimer dummy "ドアの開く時間"
             # InventoryCount - 持ってるアイテム数
@@ -47,9 +42,5 @@
 ## 干渉できないようにできるエンティティを召喚
     function world:gimmick/summon_no.interference
 
-## エレベーターを召喚
-    # エレベーターを召喚
-        function world:gimmick/elevator/summon
-
 ## ロード完了
-    tellraw @a [{"color":"dark_gray","text":">"},{"color":"gray","text":">"},{"bold":false,"color":"white","text":" "}]
+    tellraw @a [{"color":"dark_gray","text":">"},{"color":"gray","text":">"},{"bold":false,"color":"white","text":"刑務所の掃除がなされた。"}]
