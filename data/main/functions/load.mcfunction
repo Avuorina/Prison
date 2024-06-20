@@ -43,4 +43,4 @@
     function world:gimmick/summon_no.interference
 
 ## ロード完了
-    tellraw @a [{"color":"dark_gray","text":">"},{"color":"gray","text":">"},{"bold":false,"color":"white","text":"刑務所の掃除がなされた。"}]
+    tellraw @a [{"color":"dark_gray","text":"\n>"},{"color":"gray","text":">"},{"bold":false,"color":"white","text":"刑務所の掃除がなされた。"}]
