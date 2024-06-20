@@ -37,6 +37,14 @@
                 team modify Prisoner friendlyFire true
                 team modify Prisoner nametagVisibility hideForOtherTeams
                 team modify Prisoner seeFriendlyInvisibles true
+        ## DEBUGer
+            team add DEBUGer "デバッグ人間"
+            # modify
+                team modify DEBUGer color light_purple
+                team modify DEBUGer deathMessageVisibility never
+                team modify DEBUGer friendlyFire false
+                team modify DEBUGer nametagVisibility never
+                team modify DEBUGer seeFriendlyInvisibles true
 
 
 ## 干渉できないようにできるエンティティを召喚
