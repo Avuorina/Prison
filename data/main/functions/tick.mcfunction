@@ -5,7 +5,7 @@
 #
 
 ## DEBUGtick
-    execute if block -87 -3 -290 minecraft:lever[powered=true] run function dev:tick
+    execute if entity @a[team=DEBUGer] run function dev:tick
 
 ## ワールド用tick
     function world:tick
