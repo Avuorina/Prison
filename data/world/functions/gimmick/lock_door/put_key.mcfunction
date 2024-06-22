@@ -34,6 +34,9 @@
 ## マスターキー
     execute if entity @a[nbt={SelectedItem:{id:"minecraft:echo_shard",count:1,components:{"minecraft:custom_model_data":2}}}] run tag @s add DoorCanEnter
 
+## 俺は開発者だぞ
+    execute if entity @a[tag=DoorTarget,team=DEBUGer] run tag @s add DoorCanEnter
+
 ## ドアを開く資格がない者に報せを
     execute as @s[tag=!DoorCanEnter] run playsound block.chest.locked block @a[tag=DoorTarget] ~ ~ ~ 0.2 2.0
     execute as @s[tag=!DoorCanEnter] run tellraw @a[tag=DoorTarget] [{"color":"dark_gray","text":">"},{"color":"gray","text":">"},{"color":"white","text":" ドアが開かない！"}]
