@@ -8,5 +8,4 @@
     kill @e[tag=NoInter]
 
 ## サモン
-    execute positioned -114.5 -3.0 -280.5 run summon interaction ~ ~ ~ {width:1f,height:1f,Tags:["NoInter"]}
-    execute positioned -112.5 -3.0 -278.5 run summon interaction ~ ~ ~ {width:1f,height:1f,Tags:["NoInter"]}
+    execute positioned 88.5 16.0 305.5 run summon interaction ~ ~ ~ {width:1f,height:5f,Tags:["NoInter"]}
