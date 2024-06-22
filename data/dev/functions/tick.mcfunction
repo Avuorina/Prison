@@ -8,4 +8,4 @@
     execute if entity @s[tag=show_score] positioned -58 -3 -280 run function dev:sign/score
 
 ## ドア設置
-    execute as @e[tag=DoorReady] at @s run function dev:install/lock_door/
+    execute as @e[tag=Install] if entity @s at @s run function dev:install/sort

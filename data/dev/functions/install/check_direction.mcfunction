@@ -1,4 +1,4 @@
-#> dev:install/lock_door/check_direction
+#> dev:install/check_direction
 #
 # ドア設置するときの近くのプレイヤーの方角確認
 #
