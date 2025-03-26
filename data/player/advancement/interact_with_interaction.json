@@ -7,14 +7,13 @@
             "type": "minecraft:player"
           },
           "entity": {
-            "type": "minecraft:interaction",
-            "nbt": "{Tags:[\"DoorInteract\"]}"
+            "type": "minecraft:interaction"
           }
         }
       }
     },
     "rewards": {
-      "function": "world:gimmick/lock_door/take_interact"
+      "function": "world:gimmick/take_interact"
     }
   }
   
