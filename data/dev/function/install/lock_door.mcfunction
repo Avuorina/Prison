@@ -1,6 +1,6 @@
 #> dev:install/lock_door/give
 #
-# ロックドア設置のためのアイテムを使う
+# ロックドア設置のためのアイテムをgive
 #
 #
 
