@@ -5,6 +5,6 @@
 #
 
 ## ドア設置
-    give @s panda_spawn_egg[custom_name='{"color":"dark_purple","text":"ドア設置"}',entity_data={id:"minecraft:armor_stand",Marker:1b,Tags:["DoorInstall","DoorReady"],CustomName:'{"text":"ドア準備"}'}] 1
+    give @s minecraft:panda_spawn_egg[custom_name="ドア設置",entity_data={id:"minecraft:armor_stand",Tags:["DoorInstall","DoorReady"],CustomName:"ドア準備",Marker:true}] 1
 ## ドア削除
-    give @s chicken_spawn_egg[custom_name='{"color":"dark_purple","text":"ドア削除"}',entity_data={id:"minecraft:armor_stand",Tags:["DoorUnInstall","DoorReady"]}] 1
+    give @s chicken_spawn_egg[custom_name="ドア削除",entity_data={id:"minecraft:armor_stand",Tags:["DoorUnInstall","DoorReady"],CustomName:"ドア削除",Marker:true}]

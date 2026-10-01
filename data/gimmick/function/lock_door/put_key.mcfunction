@@ -1,4 +1,4 @@
-#> world:gimmick/lock_door/put_key
+#> gimmick:lock_door/put_key
 #
 # 鍵穴と鍵が合うか
 #

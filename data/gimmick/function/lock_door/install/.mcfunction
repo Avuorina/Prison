@@ -5,13 +5,13 @@
 #
 
 ## 方角確認
-    function world:gimmick/lock_door/install/check_direction
+    function gimmick:lock_door/install/check_direction
 
 ## ドアのサイズ
-    execute as @s[tag=DoorInstall] at @s[tag=DoorInstall] run function world:gimmick/lock_door/install/check_size
+    execute as @s[tag=DoorInstall] at @s[tag=DoorInstall] run function gimmick:lock_door/install/check_size
 
 ## ドアの設置をするぞ
-    execute as @s[tag=DoorInstall] at @s[tag=DoorInstall] run function world:gimmick/lock_door/install/install
+    execute as @s[tag=DoorInstall] at @s[tag=DoorInstall] run function gimmick:lock_door/install/install
 
 ## 方角もいらないだろww
     #scoreboard players reset @a Direction

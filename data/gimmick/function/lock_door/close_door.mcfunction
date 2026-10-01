@@ -1,4 +1,4 @@
-#> world:gimmick/lock_door/close_door
+#> gimmick:lock_door/close_door
 #
 # ドアは閉じるもの。そうだろ？
 #
