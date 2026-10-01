@@ -16,5 +16,5 @@
 ## 方角もいらないだろww
     #scoreboard players reset @a Direction
 ## ドアの削除をするぞ
-    execute at @s[tag=DoorUnInstall] as @s run execute at @e[type=interaction,tag=DoorInteract,distance=..3,sort=nearest,limit=1] as @s run function gimmick:lock_door/uninstall
+    execute if entity @s[tag=DoorUnInstall] as @e[type=interaction,tag=DoorInteract,distance=..3,sort=nearest,limit=1] at @s run function gimmick:lock_door/uninstall
     kill @s
