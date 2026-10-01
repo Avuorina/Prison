@@ -3,7 +3,6 @@
 #
 #
 # @within gimmick:lock_door/unlock/insert_key
-say check
 ## まずデータを消そう
     data remove entity @s interaction
 ## 鍵がないドア

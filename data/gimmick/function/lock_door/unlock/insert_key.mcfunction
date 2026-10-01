@@ -3,7 +3,6 @@
 # ドアに誰かが作用したぞ
 #
 # @within advancement player:interact_with_interaction
-    say insert
 ## 作用したエンティティが扉であれば...?
     tag @s add Inserted
     execute as @e[type=interaction,tag=DoorInteract,distance=..6] if function gimmick:lock_door/unlock/is_interact at @s run function gimmick:lock_door/unlock/check_key
