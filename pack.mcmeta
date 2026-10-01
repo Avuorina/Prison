@@ -1,8 +1,7 @@
 {
     "pack": {
-        "pack_format": 121,
         "description": "獄卒",
-        "min_format": 82,
+        "min_format": 121,
         "max_format": 121
     }
 }

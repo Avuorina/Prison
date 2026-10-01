@@ -7,7 +7,7 @@
 ## 作用したエンティティが扉であれば...?
     execute as @e[type=minecraft:interaction,distance=..5,nbt={interaction:{}},limit=1] if entity @e[tag=DoorInteract] run tag @s add DoorInteracted
     # 扉の鍵が合うかどうか
-        execute if entity @e[tag=DoorInteract,tag=DoorInteracted] as @e[tag=DoorInteracted] at @s run function world:gimmick/lock_door/put_key
+        execute if entity @e[tag=DoorInteract,tag=DoorInteracted] as @e[tag=DoorInteracted] at @s run function gimmick:lock_door/put_key
 
     ## RESET
     data remove entity @e[tag=DoorInteracted,limit=1] interaction

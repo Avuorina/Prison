@@ -5,7 +5,7 @@
 #
 
 ## 鍵がないドア
-    execute unless block ~ ~2 ~ #world:security_blocks if entity @a[advancements={player:interact_with_interaction=true}] run tag @s add DoorCanEnter
+    execute unless block ~ ~2 ~ #gimmick:security_blocks if entity @a[advancements={player:interact_with_interaction=true}] run tag @s add DoorCanEnter
 
 # example key
     #execute if block ~ ~2 ~ [上のブロックID] if entity @a[advancements={player:interact_with_interaction=true},nbt={SelectedItem:{id:"minecraft:[鍵となるアイテム]"}}] run tag @s add DoorCanEnter
