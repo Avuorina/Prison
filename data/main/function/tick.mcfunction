@@ -11,4 +11,4 @@
     execute as @a[team=debug] at @s run function dev:tick
 
 ## ワールド用tick
-    function world:tick
+    function gimmick:tick
