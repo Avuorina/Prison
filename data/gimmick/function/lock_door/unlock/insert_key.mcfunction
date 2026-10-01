@@ -10,5 +10,4 @@
 
     ## RESET
     tag @s remove Inserted
-    tag @s remove CanEnter
     advancement revoke @s only player:interact_with_interaction
