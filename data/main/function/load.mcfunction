@@ -9,8 +9,7 @@
     ## スコアボード
 
         ## トリガー系
-            # SneakTimer - スニークタイマー
-                scoreboard objectives add SneakTimer minecraft.custom:minecraft.sneak_time "スニークタイマー"
+
         ## その他
             # Direction - プレイヤーの方向を保存するぞ
                 scoreboard objectives add Direction dummy "方向"
@@ -20,6 +19,9 @@
                 scoreboard objectives add SneakFrequency dummy "スニーク頻度"
             # DoorOpenTimer - ドアが開く時間
                 scoreboard objectives add DoorOpenTimer dummy "ドアの開く時間"
+## チーム
+    team add debug
 
 ## ロード完了
-    tellraw @a [{"bold":true,"color":"aqua","text":"["},{"bold":true,"color":"white","text":"Info"},{"color":"aqua","text":"]"},{"bold":false,"color":"white","text":"世界が再読み込みされた。"}]
+    execute as @a at @s run playsound ui.button.click master @s ~ ~ ~ 1 1
+    title @a actionbar {"text":"ロード完了！","color":"green","bold":true}
