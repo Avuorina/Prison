@@ -4,4 +4,5 @@
 #
 #
 
-## 看板にスコアを表示させる
+## actionbarにスコアを表示させる
+    execute as @a run function dev:sign/score

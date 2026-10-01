@@ -16,6 +16,5 @@
 ## 方角もいらないだろww
     #scoreboard players reset @a Direction
 ## ドアの削除をするぞ
-    execute at @s[tag=DoorUnInstall] run execute at @e[distance=..3,tag=DoorInteract] run fill ~ ~ ~ ~ ~1 ~ air replace iron_door
-    execute at @s[tag=DoorUnInstall] run kill @e[distance=..3,tag=DoorInteract]
+    execute at @s[tag=DoorUnInstall] as @s run execute at @e[type=interaction,tag=DoorInteract,distance=..3,sort=nearest,limit=1] as @s run function gimmick:lock_door/uninstall
     kill @s
