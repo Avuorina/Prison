@@ -4,9 +4,6 @@
 #
 #
 
-## プレイヤーtick
-    execute as @a at @s run function player:tick
-
 ## DEBUGtick
     execute as @a[team=debug] at @s run function dev:tick
 

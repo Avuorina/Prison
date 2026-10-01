@@ -7,16 +7,16 @@
 ## 念の為RESET
     scoreboard players reset @a Direction
 
+## 一番近いプレイヤーの向きで判定する(境界は後の行が優先)
 ## 北(Direction=0)
-    scoreboard players set @a[sort=nearest,limit=1,y_rotation=135..180] Direction 0
-    scoreboard players set @a[sort=nearest,limit=1,y_rotation=-179.9..-135.1] Direction 0
+    execute as @a[sort=nearest,limit=1] if entity @s[y_rotation=135..180] run scoreboard players set @s Direction 0
+    execute as @a[sort=nearest,limit=1] if entity @s[y_rotation=-180..-135] run scoreboard players set @s Direction 0
 ## 東(Direction=90)
-    scoreboard players set @a[sort=nearest,limit=1,y_rotation=-135..-45.1] Direction 90
+    execute as @a[sort=nearest,limit=1] if entity @s[y_rotation=-135..-45] run scoreboard players set @s Direction 90
 ## 西(Direction=-90)
-    scoreboard players set @a[sort=nearest,limit=1,y_rotation=45..134.9] Direction -90
+    execute as @a[sort=nearest,limit=1] if entity @s[y_rotation=45..135] run scoreboard players set @s Direction -90
 ## 南(Direction=180)
-    scoreboard players set @a[sort=nearest,limit=1,y_rotation=0.1..44.9] Direction 180
-    scoreboard players set @a[sort=nearest,limit=1,y_rotation=-45..-0] Direction 180
+    execute as @a[sort=nearest,limit=1] if entity @s[y_rotation=-45..45] run scoreboard players set @s Direction 180
 
 ## 無いとは思うけどもしかしたら上記の条件の人がいるかもしれない
     execute unless score @a[sort=nearest,limit=1] Direction matches -180.. run say 合う方角がなかった。

@@ -19,6 +19,8 @@
                 scoreboard objectives add SneakFrequency dummy "スニーク頻度"
             # DoorOpenTimer - ドアが開く時間
                 scoreboard objectives add DoorOpenTimer dummy "ドアの開く時間"
+            # DoorID - 同じドアの部品(インタラクション)を見分けるID
+                scoreboard objectives add DoorID dummy "ドアID"
 ## チーム
     team add debug
 
