@@ -5,4 +5,4 @@
 #
 
 ## actionbarにスコアを表示させる
-    execute as @a run function dev:sign/score
+    function dev:sign/score
