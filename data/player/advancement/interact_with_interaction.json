@@ -19,6 +19,6 @@
         }
     },
     "rewards": {
-        "function": "gimmick:take_interact"
+        "function": "gimmick:lock_door/unlock/insert_key"
     }
 }
