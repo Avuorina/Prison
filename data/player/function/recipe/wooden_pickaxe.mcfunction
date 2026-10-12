@@ -8,4 +8,3 @@
     execute unless items entity @s container.* oak_log[!minecraft:custom_data] run return run advancement revoke @s only player:recipe/wooden_pickaxe
 ## 解放
     recipe give @s minecraft:wooden_pickaxe
-    recipe give @s minecraft:wooden_axe

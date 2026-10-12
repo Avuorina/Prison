@@ -7,6 +7,8 @@
 
 ## スコップ
     execute if items entity @s weapon.* written_book[custom_data~{UnlockRecipe:"wooden_shovel"}] run recipe give @s minecraft:wooden_shovel
+## ツルハシ
+    execute if items entity @s weapon.* written_book[custom_data={UnlockRecipe:"wooden_axe"}] run recipe give @s minecraft:wooden_axe
 
 ## リセット
     scoreboard players reset @s ReadBook
