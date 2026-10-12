@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+        "##",
+        "#|",
+        " |"
+    ],
+    "key": {
+        "#": "minecraft:oak_planks",
+        "|": "minecraft:stick"
+    },
+    "result": {
+        "id": "minecraft:wooden_axe",
+        "count": 1,
+        "components": {
+            "minecraft:item_name": "手作りの斧",
+            "minecraft:can_break": [{ "blocks": "minecraft:oak_log" },{ "blocks": "minecraft:oak_leaves" }],
+            "minecraft:tooltip_display": { "hidden_components": ["minecraft:can_break"] }
+        }
+    }
+}

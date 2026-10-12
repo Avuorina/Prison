@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:iron_nugget" }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "minecraft:iron_pickaxe",
+            "minecraft:iron_ingot_from_nuggets"
+        ]
+    }
+}

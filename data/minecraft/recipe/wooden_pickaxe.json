@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [ "###", " | ", " | " ],
+    "key": { "#": "minecraft:oak_planks", "|": "minecraft:stick" },
+    "result": {
+        "id": "minecraft:wooden_pickaxe",
+        "count": 1,
+        "components": {
+            "minecraft:item_name": "手作りのツルハシ",
+            "minecraft:can_break": { "blocks": "minecraft:stone" },
+            "minecraft:tooltip_display": { "hidden_components": ["minecraft:can_break"] }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [ { "items": "minecraft:oak_log" } ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "player:recipe/wooden_pickaxe"
+    }
+}

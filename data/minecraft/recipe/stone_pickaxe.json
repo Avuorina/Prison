@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [ "###", " | ", " | " ],
+    "key": { "#": "minecraft:cobblestone", "|": "minecraft:stick" },
+    "result": {
+        "id": "minecraft:stone_pickaxe",
+        "count": 1,
+        "components": {
+            "minecraft:item_name": "手作りの石のツルハシ",
+            "minecraft:can_break": { "blocks": "minecraft:iron_chain" },
+            "minecraft:tooltip_display": { "hidden_components": ["minecraft:can_break"] }
+        }
+    }
+}

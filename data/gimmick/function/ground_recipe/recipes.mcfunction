@@ -17,6 +17,7 @@
     execute if function gimmick:ground_recipe/recipe/split_planks run return 1
 ## 原木 + 斧 → 板材2枚
     execute if function gimmick:ground_recipe/recipe/chop_log run return 1
-
+## 鉄の鎖 + ツルハシ → 鉄塊3つ
+    execute if function gimmick:ground_recipe/recipe/break_chain run return 1
 ## どれにも合わなかった
     return fail
