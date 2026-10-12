@@ -17,14 +17,19 @@
         scoreboard objectives add DoorOpenTimer dummy "ドアの開く時間"
     # DoorID - 同じドアの部品(インタラクション)を見分けるID
         scoreboard objectives add DoorID dummy "ドアID"
-    # FireWoodID - 薪のID
-        scoreboard objectives add FirewoodID dummy "薪ID"
+    # GroundRecipeID - 置きレシピの材料と当たり判定(インタラクション)を結びつけるID
+        scoreboard objectives add GroundRecipeID dummy "置きレシピID"
 ## チーム
     team add debug
 
 ## レシピ
     gamerule limited_crafting true
     recipe take @a *
+
+## 旧・薪システムの後片付け(置きレシピに統合したため。ワールドから消えたらこのブロックごと消してOK)
+    kill @e[type=interaction,tag=FirewoodInteract]
+    tag @e[type=item,tag=FirewoodItem] remove FirewoodItem
+    scoreboard objectives remove FirewoodID
 
 ## ロード完了
     execute as @a at @s run playsound ui.button.click master @s ~ ~ ~ 1 1

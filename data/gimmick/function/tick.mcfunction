@@ -11,8 +11,7 @@
         execute as @e[type=armor_stand,tag=DoorReady] at @s run function gimmick:lock_door/install/
 
 ## 置きレシピ
-    # 当たり判定のない薪に付ける
-        execute as @e[type=item,tag=!FirewoodItem] if items entity @s contents oak_log[custom_data~{Firewood:1b}] at @s run function gimmick:firewood/install
-    # 当たり判定を薪に追従させる（薪が拾われたら消す）
-        execute as @e[type=interaction,tag=FirewoodInteract] run function gimmick:firewood/follow
-    
+    # 当たり判定のない材料に付ける(材料は #gimmick:ground_recipe/input で管理)
+        execute as @e[type=item,tag=!GroundRecipeItem] if items entity @s contents #gimmick:ground_recipe/input at @s run function gimmick:ground_recipe/install
+    # 当たり判定を材料に追従させる（材料が拾われたら消す）
+        execute as @e[type=interaction,tag=GroundRecipeInteract] run function gimmick:ground_recipe/follow

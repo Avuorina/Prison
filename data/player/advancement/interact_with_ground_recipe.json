@@ -10,7 +10,7 @@
                         "minecraft:entity_type": "minecraft:interaction",
                         "minecraft:entity_tags": {
                             "all_of": [
-                                "FirewoodInteract"
+                                "GroundRecipeInteract"
                             ]
                         }
                     }
@@ -19,6 +19,6 @@
         }
     },
     "rewards": {
-        "function": "gimmick:firewood/strip/swing_axe"
+        "function": "gimmick:ground_recipe/use"
     }
 }
