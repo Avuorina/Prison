@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+        "#",
+        "|",
+        "|"
+    ],
+    "key": {
+        "#": "minecraft:oak_planks",
+        "|": "minecraft:stick"
+    },
+    "result": {
+        "id": "minecraft:wooden_shovel",
+        "count": 1,
+        "components": {
+            "minecraft:custom_name": "手作りのスコップ",
+            "minecraft:can_break": { "blocks": "minecraft:packed_mud" },
+            "minecraft:tooltip_display": { "hidden_components": ["minecraft:can_break"] }
+        }
+    }
+}
