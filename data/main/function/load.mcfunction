@@ -19,17 +19,13 @@
         scoreboard objectives add DoorID dummy "ドアID"
     # GroundRecipeID - 置きレシピの材料と当たり判定(インタラクション)を結びつけるID
         scoreboard objectives add GroundRecipeID dummy "置きレシピID"
+    # ReadBook - 書いた本を開いた回数
+        scoreboard objectives add ReadBook minecraft.used:minecraft.written_book "本を読んだ回数"
 ## チーム
     team add debug
 
-## レシピ
+## ゲームルール
     gamerule limited_crafting true
-    recipe take @a *
-
-## 旧・薪システムの後片付け(置きレシピに統合したため。ワールドから消えたらこのブロックごと消してOK)
-    kill @e[type=interaction,tag=FirewoodInteract]
-    tag @e[type=item,tag=FirewoodItem] remove FirewoodItem
-    scoreboard objectives remove FirewoodID
 
 ## ロード完了
     execute as @a at @s run playsound ui.button.click master @s ~ ~ ~ 1 1

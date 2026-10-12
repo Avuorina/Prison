@@ -10,7 +10,7 @@
     execute unless items entity @a[tag=GroundRecipeUser,limit=1] weapon.mainhand #minecraft:axes run return fail
 
 ## 完成品
-    summon item ~ ~0.2 ~ {Item:{id:"minecraft:stripped_oak_log",count:1,components:{"minecraft:custom_name":"皮をはいだ薪"}},PickupDelay:10s}
+    summon item ~ ~0.2 ~ {Item:{id:"minecraft:stripped_oak_log",count:1,components:{"minecraft:item_name":"皮をはいだ薪"}},PickupDelay:10s}
     playsound minecraft:item.axe.strip block @a ~ ~ ~ 1 1
 
     return 1

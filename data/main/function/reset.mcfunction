@@ -6,7 +6,7 @@
 
 ## 本の場所
 # 脱衣所
-    item replace block -7 61 70 container.13 with written_book[written_book_content={title:"ボロボロの手帳",author:"不明",pages:["ここに来て何日経ったか\nもう数えていない。\n\n看守は毎晩同じ道を\n同じ時間に通る。","便所の臭いが\n日に日にひどくなる。\n\n水が流れていかないのは\n詰まっているからだ。\n\n排水口の下は\n泥だけだ。","\n\n――あとは\n音を立てるな。"]}] 1
+    item replace block -7 61 70 container.13 with written_book[custom_data={UnlockRecipe:"wooden_shovel"},written_book_content={title:"ボロボロの手帳",author:"不明",pages:["ここに来て何日経ったか\nもう数えていない。\n\n看守は毎晩同じ道を\n同じ時間に通る。","便所の臭いが\n日に日にひどくなる。\n\n水が流れていかないのは\n詰まっているからだ。\n\n排水口の下は\n泥だけだ。","\n\n――あとは\n音を立てるな。"]}] 1
 # 看守用倉庫
     item replace block 12 49 68 container.10 with written_book[written_book_content={title:"破れた園芸メモ",author:"園芸好きの看守",generation:3,pages:[{text:"",extra:[{text:"木の育て方\n\n",bold:true},{text:"木には一定の***が\n必**。\n\n苗木は純**なつ*に\nしか植**れない。\n\n手****せ*い。\n斧******。"}]},{text:"",extra:[{text:"木の育て方（続き）\n\n",bold:true},{text:"苗木には光が要る。\n地下で育てるなら\n松明を絶やすな。\n\n骨粉をやれば早く\n育つが、***に\n見つからないように。\n\n"},{text:"――ここから先は\n破れている",color:"dark_gray",italic:true}]}]},lore=[{text:"ページが破れている...",color:"gray",italic:false}]]
 ## 厨房
@@ -21,3 +21,5 @@
         data modify block 40 60 68 Page set value 0
     # 斧
         
+## レシピ
+    recipe take @a *

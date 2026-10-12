@@ -15,3 +15,6 @@
         execute as @e[type=item,tag=!GroundRecipeItem] if items entity @s contents #gimmick:ground_recipe/input at @s run function gimmick:ground_recipe/install
     # 当たり判定を材料に追従させる（材料が拾われたら消す）
         execute as @e[type=interaction,tag=GroundRecipeInteract] run function gimmick:ground_recipe/follow
+
+## 本を読んだ！
+    execute as @a[scores={ReadBook=1..}] run function player:read_book

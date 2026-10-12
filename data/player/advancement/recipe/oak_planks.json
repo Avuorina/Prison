@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:stripped_oak_log" }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "minecraft:oak_planks"
+        ]
+    }
+}
