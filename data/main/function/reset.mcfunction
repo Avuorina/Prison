@@ -40,7 +40,7 @@
         data modify block 49 60 82 Page set value 0
 ## レシピ
     recipe take @a *
-    advancement revoke @s everything
+    advancement revoke @a everything
 
 ## ブロックの再設置
 # 房下
