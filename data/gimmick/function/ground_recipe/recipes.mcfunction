@@ -15,6 +15,8 @@
     execute if function gimmick:ground_recipe/recipe/strip_firewood run return 1
 ## 板材 + 斧 → 棒2本
     execute if function gimmick:ground_recipe/recipe/split_planks run return 1
+## 原木 + 斧 → 板材2枚
+    execute if function gimmick:ground_recipe/recipe/chop_log run return 1
 
 ## どれにも合わなかった
     return fail

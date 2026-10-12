@@ -9,6 +9,7 @@
     item replace block -7 61 70 container.13 with written_book[custom_data={UnlockRecipe:"wooden_shovel"},written_book_content={title:"ボロボロの手帳",author:"不明",pages:["ここに来て何日経ったか\nもう数えていない。\n\n看守は毎晩同じ道を\n同じ時間に通る。","便所の臭いが\n日に日にひどくなる。\n\n水が流れていかないのは\n詰まっているからだ。\n\n排水口の下は\n泥だけだ。","\n\n――あとは\n音を立てるな。"]}] 1
 # 看守用倉庫
     item replace block 12 49 68 container.10 with written_book[written_book_content={title:"破れた園芸メモ",author:"園芸好きの看守",generation:3,pages:[{text:"",extra:[{text:"木の育て方\n\n",bold:true},{text:"木には一定の***が\n必**。\n\n苗木は純**なつ*に\nしか植**れない。\n\n手****せ*い。\n斧******。"}]},{text:"",extra:[{text:"木の育て方（続き）\n\n",bold:true},{text:"苗木には光が要る。\n地下で育てるなら\n松明を絶やすな。\n\n骨粉をやれば早く\n育つが、***に\n見つからないように。\n\n"},{text:"――ここから先は\n破れている",color:"dark_gray",italic:true}]}]},lore=[{text:"ページが破れている...",color:"gray",italic:false}]]
+    item replace block 12 49 71 container.15 with oak_sapling[can_place_on={blocks:"minecraft:dirt"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 3
 ## 厨房
     # 本のデータを用意
         data modify storage gimmick:book kitchen_manual set value {id:"minecraft:written_book",count:1,components:{"minecraft:written_book_content":{title:"厨房作業の心得",author:"厨房主任",pages:["厨房作業の心得\n\n一、竈の火\n二、薪の扱い\n三、刃物の管理\n四、食材について\n\n作業前に必ず\n目を通すこと。","一、竈の火\n\n火は作業の始めに\n入れること。\n\n作業中は\n火を絶やすな。\n\n作業が終わったら\n必ず火を消すこと。","二、薪の扱い\n\n皮の付いた薪は\n煙ばかり出る。\n薪は床に投げて置き、\n斧で皮を剥いでから\n使うこと。\n\n剥いた薪は割って\n焚き付けにする。","三、刃物の管理\n\n包丁、斧などの\n刃物は作業前に\n借り受け、作業後に\n必ず返却すること。\n\n数が合わない時は\n全員の身体検査を行う。\n\n斧が壊れたら看守に申し出ること。","四、食材について\n\n食材の持ち出しは\n固く禁ずる。\n\nつまみ食いも\n見つけ次第\n懲罰房送りとする。\n\n――厨房主任"]},"minecraft:lore":[{text:"刑務作業用",color:"gray",italic:false}]}}
@@ -21,5 +22,10 @@
         data modify block 40 60 68 Page set value 0
     # 斧
         
+## 前任者の隠れ家
+    # 続きの手帳
+        item replace block 35 50 104 container.13 with written_book[custom_data={UnlockRecipe:"wooden_axe"},written_book_content={title:"続きの手帳",author:"不明",generation:3,pages:["ここまで来れたなら\nもう引き返すな。\n\nこの部屋のことは\n誰にも話すな。\n他の囚人に話すかはお前の自由だが。","石のツルハシは\nもう刃がこぼれてる。\nあと数回が限界だ。\n\n房の下の石を抜けば\n下水道に出られる。\n\nレバーを忘れるな。","出口は東の排水口。\n\nだが壁が厚すぎる。\nツルハシじゃ\n歯が立たなかった。\n\n爆薬でしか\n抜けない。","爆薬には鉄がいる。\n鉄の前に石だ。\n\n石の前に木だ。\n苗木は光がないと\n育たない。\n\n斧はここで作れ。","水を止めろ。\n\n濡れた爆薬は\nただの粉だ。","明日、火薬を\n取りに行く。\n\n看守の詰所の----"]}] 1
+    # 欠けた石のツルハシ
+        item replace block 35 50 104 container.11 with stone_pickaxe[item_name="欠けた石のツルハシ",damage=130,can_break={blocks:"minecraft:smooth_basalt"},tooltip_display={hidden_components:["minecraft:can_break"]}] 1
 ## レシピ
     recipe take @a *
