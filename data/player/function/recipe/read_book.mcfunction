@@ -1,4 +1,4 @@
-#> player:read_book
+#> player:recipe/read_book
 #
 # 本を読んだ人に、本の印に応じたレシピを渡すぞ
 #
