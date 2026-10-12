@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [ "GRG", "RGR", "GRG" ],
+    "key": {
+        "G": "minecraft:gunpowder",
+        "R": "minecraft:redstone"
+    },
+    "result": {
+        "id": "minecraft:fire_charge",
+        "count": 1,
+        "components": {
+            "minecraft:item_name": "火薬の塊",
+            "minecraft:lore": [ { "text": "砂で包めば爆薬になりそうだ。", "color": "gray", "italic": true } ]
+        }
+    }
+}

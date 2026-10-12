@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    { "items": "minecraft:redstone" }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [ "minecraft:fire_charge" ]
+    }
+}

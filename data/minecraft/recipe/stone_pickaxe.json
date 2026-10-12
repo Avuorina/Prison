@@ -8,8 +8,9 @@
         "count": 1,
         "components": {
             "minecraft:item_name": "手作りの石のツルハシ",
-            "minecraft:can_break": { "blocks": "minecraft:iron_chain" },
-            "minecraft:tooltip_display": { "hidden_components": ["minecraft:can_break"] }
+            "minecraft:can_break": [{ "blocks": "minecraft:iron_chain" },{"blocks":"dark_prismarine"},{"blocks":"smooth_basalt"}],
+            "minecraft:lore": [ { "text": "鎖やタイルくらいなら外せるんじゃないか。", "color": "gray", "italic": true } ],
+            "minecraft:tooltip_display": { "hidden_components": ["minecraft:can_break","minecraft:attribute_modifiers"] }
         }
     }
 }

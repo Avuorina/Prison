@@ -15,8 +15,9 @@
         "count": 1,
         "components": {
             "minecraft:item_name": "手作りのスコップ",
-            "minecraft:can_break": [{ "blocks": "minecraft:mud" },{"blocks": "minecraft:rooted_dirt"}],
-            "minecraft:tooltip_display": { "hidden_components": ["minecraft:can_break"] }
+            "minecraft:lore": [ { "text": "やわらかい土とかなら掘れそうなんじゃないか。", "color": "gray", "italic": true } ],
+            "minecraft:can_break": [{ "blocks": "minecraft:mud" },{"blocks": "minecraft:rooted_dirt"},{"blocks":"minecraft:sand"}],
+            "minecraft:tooltip_display": { "hidden_components": ["minecraft:can_break","minecraft:attribute_modifiers"] }
         }
     }
 }

@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "equipment",
+    "ingredients": [
+        "minecraft:iron_ingot",
+        "minecraft:flint"
+    ],
+    "result": {
+        "id": "minecraft:flint_and_steel",
+        "count": 1,
+        "components": {
+            "minecraft:item_name": "手製の火打石",
+            "minecraft:can_place_on": { "blocks": "minecraft:tnt" },
+            "minecraft:lore": [ { "text": "爆薬に火を付けられそうだ。", "color": "gray", "italic": true } ],
+            "minecraft:tooltip_display": { "hidden_components": ["minecraft:can_place_on", "minecraft:attribute_modifiers"] }
+        }
+    }
+}

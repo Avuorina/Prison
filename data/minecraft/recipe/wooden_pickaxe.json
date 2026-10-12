@@ -8,8 +8,9 @@
         "count": 1,
         "components": {
             "minecraft:item_name": "手作りのツルハシ",
+            "minecraft:lore": [ { "text": "石くらいなら壊せるんじゃないか。", "color": "gray", "italic": true } ],
             "minecraft:can_break": { "blocks": "minecraft:stone" },
-            "minecraft:tooltip_display": { "hidden_components": ["minecraft:can_break"] }
+            "minecraft:tooltip_display": { "hidden_components": ["minecraft:can_break","minecraft:attribute_modifiers"] }
         }
     }
 }

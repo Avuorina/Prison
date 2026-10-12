@@ -15,8 +15,9 @@
         "count": 1,
         "components": {
             "minecraft:item_name": "手作りの斧",
+            "minecraft:lore": [ { "text": "木なら切り倒せるんじゃないか。", "color": "gray", "italic": true } ],
             "minecraft:can_break": [{ "blocks": "minecraft:oak_log" },{ "blocks": "minecraft:oak_leaves" }],
-            "minecraft:tooltip_display": { "hidden_components": ["minecraft:can_break"] }
+            "minecraft:tooltip_display": { "hidden_components": ["minecraft:can_break","minecraft:attribute_modifiers"] }
         }
     }
 }

@@ -8,6 +8,6 @@
         }
     },
     "rewards": {
-        "function": "player:recipe/wooden_pickaxe"
+        "recipes":["wooden_pickaxe"]    
     }
 }
