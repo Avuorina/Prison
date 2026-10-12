@@ -14,7 +14,7 @@
         "id": "minecraft:wooden_shovel",
         "count": 1,
         "components": {
-            "minecraft:custom_name": "手作りのスコップ",
+            "minecraft:item_name": "手作りのスコップ",
             "minecraft:can_break": [{ "blocks": "minecraft:mud" },{"blocks": "minecraft:rooted_dirt"}],
             "minecraft:tooltip_display": { "hidden_components": ["minecraft:can_break"] }
         }
