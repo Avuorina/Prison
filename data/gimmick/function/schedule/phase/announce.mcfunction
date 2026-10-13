@@ -11,8 +11,8 @@
     title @a times 10 60 20
 
 ## サブタイトル
-    title @a[team=Guard] subtitle {nbt:"Label",storage:"gimmick:schedule",color:"gray"}
-    title @a[team=!Guard] subtitle {nbt:"TimeLabel",storage:"gimmick:schedule",color:"gray"}
+    title @a[team=Guard] subtitle {nbt:"Label",storage:"gimmick:schedule",interpret:true,color:"gray"}
+    title @a[team=!Guard] subtitle {nbt:"TimeLabel",storage:"gimmick:schedule",interpret:true,color:"gray"}
 
 ## タイトル(起床のときだけ日付、ほかは空にしてサブタイトルだけ出す)
     execute if score #Phase Schedule matches 0 run title @a title [{score:{name:"#Day",objective:"Schedule"},color:"white",bold:true},{text:"日目",color:"white",bold:true}]
