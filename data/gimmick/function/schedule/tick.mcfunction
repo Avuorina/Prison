@@ -17,6 +17,8 @@
     execute unless score #Running Schedule matches 1 run return 0
 ## 空の見た目を合わせる
     function gimmick:schedule/sky
+## 今の時刻(時・分)
+    function gimmick:schedule/time
 ## 看守のボスバー
     function gimmick:schedule/bossbar
 ## 囚人のアクションバー(時刻だけ)

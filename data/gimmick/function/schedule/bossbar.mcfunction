@@ -20,6 +20,9 @@
     scoreboard players operation #Min Schedule /= #60 Schedule
     scoreboard players operation #Sec Schedule %= #60 Schedule
 
-## タイトル(例：3日目 13:00 刑務作業　残り 4:05)
-    execute if score #Sec Schedule matches 10.. run bossbar set prison:schedule name [{score:{name:"#Day",objective:"Schedule"}},{text:"日目 "},{nbt:"Label",storage:"gimmick:schedule",interpret:true},{text:"　残り "},{score:{name:"#Min",objective:"Schedule"}},{text:":"},{score:{name:"#Sec",objective:"Schedule"}},{nbt:"SpeedLabel",storage:"gimmick:schedule",interpret:true,color:"aqua"}]
-    execute if score #Sec Schedule matches ..9 run bossbar set prison:schedule name [{score:{name:"#Day",objective:"Schedule"}},{text:"日目 "},{nbt:"Label",storage:"gimmick:schedule",interpret:true},{text:"　残り "},{score:{name:"#Min",objective:"Schedule"}},{text:":0"},{score:{name:"#Sec",objective:"Schedule"}},{nbt:"SpeedLabel",storage:"gimmick:schedule",interpret:true,color:"aqua"}]
+## 秒の0埋め
+    execute if score #Sec Schedule matches 10.. run data modify storage gimmick:schedule SecPad set value ""
+    execute if score #Sec Schedule matches ..9 run data modify storage gimmick:schedule SecPad set value "0"
+
+## タイトル(例：3日目 13:42 刑務作業　残り 4:05)
+    bossbar set prison:schedule name [{score:{name:"#Day",objective:"Schedule"}},{text:"日目 "},{score:{name:"#Hour",objective:"Schedule"}},{text:":"},{nbt:"MinPad",storage:"gimmick:schedule",interpret:true},{score:{name:"#Minute",objective:"Schedule"}},{text:" "},{nbt:"Name",storage:"gimmick:schedule",interpret:true},{text:"　残り "},{score:{name:"#Min",objective:"Schedule"}},{text:":"},{nbt:"SecPad",storage:"gimmick:schedule",interpret:true},{score:{name:"#Sec",objective:"Schedule"}},{nbt:"SpeedLabel",storage:"gimmick:schedule",interpret:true,color:"aqua"}]
