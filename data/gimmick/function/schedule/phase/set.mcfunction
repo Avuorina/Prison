@@ -41,7 +41,7 @@
     execute if score #Phase Schedule matches 7 run scoreboard players set #Start Schedule 15000
     execute if score #Phase Schedule matches 7 run scoreboard players set #Span Schedule 9000
 
-## ボスバーの予定名
+## 看守のサブタイトルの予定名(開始時刻つき)
     execute if score #Phase Schedule matches 0 run data modify storage gimmick:schedule Label set value "6:00 起床・点呼"
     execute if score #Phase Schedule matches 1 run data modify storage gimmick:schedule Label set value "7:00 朝食"
     execute if score #Phase Schedule matches 2 if score #Workday Schedule matches 1 run data modify storage gimmick:schedule Label set value "8:00 刑務作業"
@@ -52,6 +52,18 @@
     execute if score #Phase Schedule matches 5 run data modify storage gimmick:schedule Label set value "17:00 夕食・所持品検査"
     execute if score #Phase Schedule matches 6 run data modify storage gimmick:schedule Label set value "18:00 房内で自由時間"
     execute if score #Phase Schedule matches 7 run data modify storage gimmick:schedule Label set value "21:00 消灯"
+
+## ボスバーの予定名(時刻なし。時刻は今の時刻を出す)
+    execute if score #Phase Schedule matches 0 run data modify storage gimmick:schedule Name set value "起床・点呼"
+    execute if score #Phase Schedule matches 1 run data modify storage gimmick:schedule Name set value "朝食"
+    execute if score #Phase Schedule matches 2 if score #Workday Schedule matches 1 run data modify storage gimmick:schedule Name set value "刑務作業"
+    execute if score #Phase Schedule matches 2 if score #Workday Schedule matches 0 run data modify storage gimmick:schedule Name set value "自由時間"
+    execute if score #Phase Schedule matches 3 run data modify storage gimmick:schedule Name set value "昼食"
+    execute if score #Phase Schedule matches 4 if score #Workday Schedule matches 1 run data modify storage gimmick:schedule Name set value "刑務作業"
+    execute if score #Phase Schedule matches 4 if score #Workday Schedule matches 0 run data modify storage gimmick:schedule Name set value "入浴・自由時間"
+    execute if score #Phase Schedule matches 5 run data modify storage gimmick:schedule Name set value "夕食・所持品検査"
+    execute if score #Phase Schedule matches 6 run data modify storage gimmick:schedule Name set value "房内で自由時間"
+    execute if score #Phase Schedule matches 7 run data modify storage gimmick:schedule Name set value "消灯"
 
 ## 囚人向けの時刻だけの表示
     execute if score #Phase Schedule matches 0 run data modify storage gimmick:schedule TimeLabel set value "6:00"
