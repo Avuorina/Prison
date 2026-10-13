@@ -19,7 +19,8 @@
     gamerule advance_time false
 ## 看守のボスバーを出す
     bossbar set prison:schedule visible true
-## 動かす
-    scoreboard players set #Running Schedule 1
+## 等速で動かす
+    scoreboard players set #Mode Schedule 0
+    function gimmick:schedule/speed
     function gimmick:schedule/phase/set
     function gimmick:schedule/phase/announce

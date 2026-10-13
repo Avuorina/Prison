@@ -4,6 +4,11 @@
 #
 # @within function gimmick:tick
 
+## 速さ(#Interval tickに1回だけ進める)
+    scoreboard players add #Step Schedule 1
+    execute if score #Step Schedule < #Interval Schedule run return 0
+    scoreboard players set #Step Schedule 0
+
 ## 時計を進める
     scoreboard players add #Timer Schedule 1
 ## フェーズの長さに達したら次のフェーズへ
