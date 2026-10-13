@@ -5,8 +5,7 @@
 # @within function gimmick:schedule/tick
 
 ## 看守にだけ見せる
-    bossbar set prison:schedule players @a[team=Guard]
-    bossbar set prison:schedule players @a[team=debug]
+    bossbar set prison:schedule players @a[team=!Prisoner]
 
 ## 残りtick → バーの長さ
     scoreboard players operation #Remain Schedule = #Length Schedule
