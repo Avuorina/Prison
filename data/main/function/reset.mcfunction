@@ -117,6 +117,22 @@
 # 自由広場
     fill -53 59 46 -49 59 51 sand replace air
 
+## 囚人
+    # 脱獄した人・処刑された人を囚人に戻す
+        gamemode adventure @a[team=Escaped]
+        gamemode adventure @a[team=Executed]
+        team join Prisoner @a[team=Escaped]
+        team join Prisoner @a[team=Executed]
+    # 今回のゲーム番号を進めて、囚人を参加者として登録(残り日数30日、残りの囚人の数を数える)
+    # ※オフラインの参加者は、戻ってきたときに gimmick:tick で登録し直される
+        scoreboard players add #Current GameId 1
+        scoreboard players set #Left Schedule 0
+        scoreboard players set #Total Schedule 0
+        execute as @a[team=Prisoner] run function gimmick:schedule/execution/enroll
+
 ## 日課
     # 1日目の起床から時計を動かす
         function gimmick:schedule/start
+
+## 房の扉の上の表示
+    function gimmick:sentence/board/update_all

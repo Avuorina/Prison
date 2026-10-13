@@ -10,6 +10,8 @@
     scoreboard players set #60 Schedule 60
     scoreboard players set #24 Schedule 24
     scoreboard players set #1000 Schedule 1000
+## ゲーム終了の印を消す
+    scoreboard players set #Over Schedule 0
 ## 1日目の起床から
     scoreboard players set #Day Schedule 1
     scoreboard players set #Workday Schedule 1

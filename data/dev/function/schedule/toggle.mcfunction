@@ -5,8 +5,9 @@
 #
 # @within function dev:schedule/use
 
-## まだ始まっていない・時間切れのあとは何もしない
-    execute unless score #Day Schedule matches 1..30 run return run tellraw @s {text:"日課はまだ始まっていません(main:reset で開始)",color:"red"}
+## まだ始まっていない・ゲーム終了のあとは何もしない
+    execute unless score #Day Schedule matches 1.. run return run tellraw @s {text:"日課はまだ始まっていません(main:reset で開始)",color:"red"}
+    execute if score #Over Schedule matches 1 run return run tellraw @s {text:"ゲームは終了しています(main:reset でやり直し)",color:"red"}
 
 ## 次のモードへ
     scoreboard players add #Mode Schedule 1
