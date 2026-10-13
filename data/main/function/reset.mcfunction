@@ -129,3 +129,6 @@
 ## 日課
     # 1日目の起床から時計を動かす
         function gimmick:schedule/start
+
+## 房の扉の上の表示
+    function gimmick:sentence/board/update_all

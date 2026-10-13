@@ -11,5 +11,7 @@
     tellraw @a [{selector:"@s",color:"gold"},{text:" が脱獄した！",color:"green",bold:true}]
     title @s title {text:"脱獄成功",color:"green",bold:true}
     playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 1 1
+## 房の扉の上の表示を「脱獄」に
+    function gimmick:sentence/board/update_all
 ## 最後の囚人ならゲーム終了
     function gimmick:schedule/execution/end_check
