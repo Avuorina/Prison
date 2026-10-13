@@ -21,8 +21,23 @@
         scoreboard objectives add GroundRecipeID dummy "置きレシピID"
     # ReadBook - 書いた本を開いた回数
         scoreboard objectives add ReadBook minecraft.used:minecraft.written_book "本を読んだ回数"
+    # EscapeTimer - ゴールにいる時間
+        scoreboard objectives add EscapeTimer dummy "脱獄タイマー"
 ## チーム
     team add debug
+    # Guard - 看守
+        team add Guard "看守"
+        team modify Guard color blue
+    # Prisoner - 囚人
+        team add Prisoner "囚人"
+        team modify Prisoner color gold
+    # Escaped - 脱獄者
+        team add Escaped "脱獄者"
+        team modify Escaped color green
+    # 名前を壁越しに見えなくする(全チーム共通)
+        team modify Guard nametagVisibility never
+        team modify Prisoner nametagVisibility hideForOtherTeams
+        team modify Escaped nametagVisibility never
 
 ## ゲームルール
     gamerule limited_crafting true

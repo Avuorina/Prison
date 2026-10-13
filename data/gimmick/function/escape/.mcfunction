@@ -10,3 +10,7 @@
 ## 水門を閉める。
     fill 65 49 61 65 49 63 mangrove_planks
     playsound block.piston.contract master @a 60 49 70 1 1 0
+
+## 看守に知らせる
+    title @a[team=Guard] title ""
+    title @a[team=Guard] subtitle [{"text":"⚠","color":"yellow"},{"text":"  地下の水門が開いた！  "},{"text":"⚠","color":"yellow"}]

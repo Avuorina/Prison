@@ -31,3 +31,9 @@
    execute if block 60 49 70 minecraft:lever[powered=false] unless data storage gimmick:sluice_gate {On:true} run function gimmick:escape/
    ## 爆薬
     execute as @e[type=tnt] at @s run function gimmick:escape/tnt/tick
+## 脱獄
+    # ゴールにいる(生きている)囚人のタイマーを進める
+        execute as @e[type=player,team=Prisoner,x=94,y=60,z=74,dx=16,dy=10,dz=33] run function gimmick:escape/goal
+    # ゴールにいない囚人はタイマーをリセット
+        scoreboard players reset @a[team=Prisoner,tag=!InGoal] EscapeTimer
+        tag @a remove InGoal
