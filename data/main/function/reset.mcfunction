@@ -116,3 +116,7 @@
 
 # 自由広場
     fill -53 59 46 -49 59 51 sand replace air
+
+## 日課
+    # 1日目の起床から時計を動かす
+        function gimmick:schedule/start

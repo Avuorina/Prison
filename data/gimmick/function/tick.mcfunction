@@ -4,6 +4,9 @@
 #
 #
 
+## 日課
+    execute if score #Running Schedule matches 1 run function gimmick:schedule/tick
+
 ## ドア
     # ドアが開いてる
         execute as @e[type=interaction,tag=DoorCanEnter,scores={DoorOpenTimer=0..}] run function gimmick:lock_door/close_door
