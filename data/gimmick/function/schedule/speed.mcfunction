@@ -24,9 +24,3 @@
     execute if score #Mode Schedule matches 1 run data modify storage gimmick:schedule SpeedLabel set value "　[×1/2]"
     execute if score #Mode Schedule matches 2 run data modify storage gimmick:schedule SpeedLabel set value "　[×1/10]"
     execute if score #Mode Schedule matches 3 run bossbar set prison:schedule name {text:"一時停止中",color:"gray"}
-
-## GMに知らせる
-    execute if score #Mode Schedule matches 0 run tellraw @a[team=debug] {text:"[日課] 等速",color:"green"}
-    execute if score #Mode Schedule matches 1 run tellraw @a[team=debug] {text:"[日課] 速さ 1/2",color:"yellow"}
-    execute if score #Mode Schedule matches 2 run tellraw @a[team=debug] {text:"[日課] 速さ 1/10",color:"gold"}
-    execute if score #Mode Schedule matches 3 run tellraw @a[team=debug] {text:"[日課] 一時停止",color:"red"}
