@@ -108,10 +108,11 @@
     setblock -2 49 64 waxed_oxidized_copper_bars[east=true,north=false,south=true,west=true]
     setblock -2 48 64 waxed_weathered_copper_bars[east=true,north=false,south=true,west=true]
     setblock -3 49 64 waxed_weathered_copper_bars[east=true,north=false,south=true,west=false]
-    setblock -3 49 64 waxed_exposed_copper_bars[east=true,north=false,south=true,west=false]
+    setblock -3 48 64 waxed_exposed_copper_bars[east=true,north=false,south=true,west=false]
     fill 65 50 61 65 48 63 mangrove_planks
     fill 65 49 61 65 49 63 mangrove_fence[waterlogged=true]
     data merge storage gimmick:sluice_gate {On:false}
+    setblock 60 49 70 lever[face=wall,facing=north,powered=true]
 
 # 自由広場
     fill -53 59 46 -49 59 51 sand replace air

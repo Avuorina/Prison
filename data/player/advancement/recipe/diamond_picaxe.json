@@ -1,0 +1,9 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": { "items": [ { "items": "minecraft:diamond" } ] }
+        }
+    },
+    "rewards": { "recipes": [ "minecraft:diamond_pickaxe" ] }
+}
