@@ -25,6 +25,8 @@
         scoreboard objectives add EscapeTimer dummy "脱獄タイマー"
     # UseCarrotStick - 人参付きの棒を使った回数(デバッグ用アイテムの右クリック検知)
         scoreboard objectives add UseCarrotStick minecraft.used:minecraft.carrot_on_a_stick "人参付きの棒の使用回数"
+    # ExecutionDay - 囚人ごとの処刑の日(この日の翌朝に処刑)
+        scoreboard objectives add ExecutionDay dummy "処刑の日"
     # Schedule - 刑務所の時計(#Day 日付 / #Phase 予定 / #Timer 経過tick / #Labor 刑務作業中)
         scoreboard objectives add Schedule dummy "日課"
 ## ボスバー
@@ -41,6 +43,10 @@
     # Escaped - 脱獄者
         team add Escaped "脱獄者"
         team modify Escaped color green
+    # Executed - 処刑された囚人
+        team add Executed "処刑"
+        team modify Executed color dark_red
+        team modify Executed nametagVisibility never
     # 名前を壁越しに見えなくする(全チーム共通)
         team modify Guard nametagVisibility never
         team modify Prisoner nametagVisibility hideForOtherTeams

@@ -117,6 +117,15 @@
 # 自由広場
     fill -53 59 46 -49 59 51 sand replace air
 
+## 囚人
+    # 脱獄した人・処刑された人を囚人に戻す
+        gamemode adventure @a[team=Escaped]
+        gamemode adventure @a[team=Executed]
+        team join Prisoner @a[team=Escaped]
+        team join Prisoner @a[team=Executed]
+    # 処刑の日は30日目(31日目の朝に処刑)
+        scoreboard players set @a[team=Prisoner] ExecutionDay 30
+
 ## 日課
     # 1日目の起床から時計を動かす
         function gimmick:schedule/start
