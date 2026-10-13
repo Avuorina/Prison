@@ -10,3 +10,5 @@
     execute if score #Timer Schedule >= #Length Schedule run function gimmick:schedule/next
 ## 空の見た目を合わせる
     function gimmick:schedule/sky
+## 看守のボスバー
+    function gimmick:schedule/bossbar

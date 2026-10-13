@@ -25,6 +25,9 @@
         scoreboard objectives add EscapeTimer dummy "脱獄タイマー"
     # Schedule - 刑務所の時計(#Day 日付 / #Phase 予定 / #Timer 経過tick / #Labor 刑務作業中)
         scoreboard objectives add Schedule dummy "日課"
+## ボスバー
+    # prison:schedule - 看守にだけ見せる日課の残り時間
+        bossbar add prison:schedule ""
 ## チーム
     team add debug
     # Guard - 看守
