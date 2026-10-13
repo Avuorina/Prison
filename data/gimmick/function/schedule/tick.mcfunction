@@ -14,3 +14,5 @@
     function gimmick:schedule/sky
 ## 看守のボスバー
     function gimmick:schedule/bossbar
+## 囚人のボスバー(時刻だけ)
+    function gimmick:schedule/clock

@@ -53,6 +53,16 @@
     execute if score #Phase Schedule matches 6 run data modify storage gimmick:schedule Label set value "18:00 房内で自由時間"
     execute if score #Phase Schedule matches 7 run data modify storage gimmick:schedule Label set value "21:00 消灯"
 
+## 囚人向けの時刻だけの表示
+    execute if score #Phase Schedule matches 0 run data modify storage gimmick:schedule TimeLabel set value "6:00"
+    execute if score #Phase Schedule matches 1 run data modify storage gimmick:schedule TimeLabel set value "7:00"
+    execute if score #Phase Schedule matches 2 run data modify storage gimmick:schedule TimeLabel set value "8:00"
+    execute if score #Phase Schedule matches 3 run data modify storage gimmick:schedule TimeLabel set value "12:00"
+    execute if score #Phase Schedule matches 4 run data modify storage gimmick:schedule TimeLabel set value "13:00"
+    execute if score #Phase Schedule matches 5 run data modify storage gimmick:schedule TimeLabel set value "17:00"
+    execute if score #Phase Schedule matches 6 run data modify storage gimmick:schedule TimeLabel set value "18:00"
+    execute if score #Phase Schedule matches 7 run data modify storage gimmick:schedule TimeLabel set value "21:00"
+
 ## ボスバーの色(拘束=赤 / 半拘束=黄 / 非拘束=緑)とバーの長さ
     execute if score #Phase Schedule matches 0..1 run bossbar set prison:schedule color red
     execute if score #Phase Schedule matches 3 run bossbar set prison:schedule color red
