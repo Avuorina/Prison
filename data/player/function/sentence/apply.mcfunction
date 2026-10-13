@@ -1,13 +1,13 @@
 #> player:sentence/apply
 #
-# 処刑の日を #Delta 日ずらすぞ
+# 処刑までの残り日数を #Delta 日増減するぞ
 #
 # @within function player:sentence/adjust
 # @s 対象の囚人
 
-## 処刑の日をずらす(今日より前にはしない)
-    scoreboard players operation @s ExecutionDay += #Delta _
-    execute if score @s ExecutionDay < #Day Schedule run scoreboard players operation @s ExecutionDay = #Day Schedule
+## 残り日数を増減(0より下にはしない)
+    scoreboard players operation @s SentenceLeft += #Delta _
+    execute if score @s SentenceLeft matches ..-1 run scoreboard players set @s SentenceLeft 0
 
 ## 本人に知らせる
     function gimmick:schedule/execution/remaining

@@ -123,8 +123,8 @@
         gamemode adventure @a[team=Executed]
         team join Prisoner @a[team=Escaped]
         team join Prisoner @a[team=Executed]
-    # 処刑の日は30日目(31日目の朝に処刑)
-        scoreboard players set @a[team=Prisoner] ExecutionDay 30
+    # 処刑までの残り日数は30日(看守が毎晩、消灯前に手で減らす)
+        scoreboard players set @a[team=Prisoner] SentenceLeft 30
 
 ## 日課
     # 1日目の起床から時計を動かす
