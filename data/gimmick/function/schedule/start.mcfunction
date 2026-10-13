@@ -19,7 +19,6 @@
     gamerule advance_time false
 ## 看守のボスバーを出す
     bossbar set prison:schedule visible true
-    bossbar set prison:clock visible true
 ## 動かす
     scoreboard players set #Running Schedule 1
     function gimmick:schedule/phase/set

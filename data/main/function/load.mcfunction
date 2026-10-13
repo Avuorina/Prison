@@ -28,11 +28,6 @@
 ## ボスバー
     # prison:schedule - 看守にだけ見せる日課の残り時間
         bossbar add prison:schedule ""
-    # prison:clock - 囚人にだけ見せる日付と時刻
-        bossbar add prison:clock ""
-        bossbar set prison:clock color white
-        bossbar set prison:clock max 1
-        bossbar set prison:clock value 1
 ## チーム
     team add debug
     # Guard - 看守

@@ -7,4 +7,3 @@
     scoreboard players set #Running Schedule 0
     scoreboard players set #Labor Schedule 0
     bossbar set prison:schedule visible false
-    bossbar set prison:clock visible false
