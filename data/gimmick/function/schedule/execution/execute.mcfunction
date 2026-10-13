@@ -6,6 +6,7 @@
 # @s 処刑の日を過ぎた囚人
 
     team join Executed @s
+    scoreboard players remove #Left Schedule 1
     gamemode spectator @s
     tellraw @a [{selector:"@s",color:"gold"},{text:" は処刑された…",color:"dark_red",bold:true}]
     title @s times 10 80 20

@@ -123,8 +123,12 @@
         gamemode adventure @a[team=Executed]
         team join Prisoner @a[team=Escaped]
         team join Prisoner @a[team=Executed]
-    # 処刑までの残り日数は30日(看守が毎晩、消灯前に手で減らす)
-        scoreboard players set @a[team=Prisoner] SentenceLeft 30
+    # 今回のゲーム番号を進めて、囚人を参加者として登録(残り日数30日、残りの囚人の数を数える)
+    # ※オフラインの参加者は、戻ってきたときに gimmick:tick で登録し直される
+        scoreboard players add #Current GameId 1
+        scoreboard players set #Left Schedule 0
+        scoreboard players set #Total Schedule 0
+        execute as @a[team=Prisoner] run function gimmick:schedule/execution/enroll
 
 ## 日課
     # 1日目の起床から時計を動かす

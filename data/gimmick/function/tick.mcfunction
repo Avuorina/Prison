@@ -7,6 +7,11 @@
 ## 日課
     execute if score #Running Schedule matches 1 run function gimmick:schedule/tick
 
+## リセットのときにオフラインだった参加者が戻ってきたら登録し直す
+    execute if score #Current GameId matches 1.. as @a[team=Prisoner] unless score @s GameId = #Current GameId run function gimmick:schedule/execution/rejoin
+    execute if score #Current GameId matches 1.. as @a[team=Escaped] unless score @s GameId = #Current GameId run function gimmick:schedule/execution/rejoin
+    execute if score #Current GameId matches 1.. as @a[team=Executed] unless score @s GameId = #Current GameId run function gimmick:schedule/execution/rejoin
+
 ## ドア
     # ドアが開いてる
         execute as @e[type=interaction,tag=DoorCanEnter,scores={DoorOpenTimer=0..}] run function gimmick:lock_door/close_door
