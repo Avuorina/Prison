@@ -93,7 +93,7 @@
 
 # 畑
     setblock 16 56 98 lever[face=wall,facing=west,powered=true]
-    set
+    setblock 35 59 100 rooted_dirt
 
 # 地下水道
     fill 57 50 60 57 48 64 iron_chain[axis=z,waterlogged=false]
@@ -103,4 +103,15 @@
     fill 7 50 63 7 47 61 iron_chain[axis=y]
     fill -14 50 63 -14 47 61 iron_chain[axis=y]
     fill -33 50 63 -33 47 61 iron_chain[axis=y]
-    
+    setblock -1 49 64 waxed_copper_bars[east=false,north=false,south=true,west=true]
+    setblock -1 48 64 waxed_exposed_copper_bars[east=false,north=false,south=true,west=true]
+    setblock -2 49 64 waxed_oxidized_copper_bars[east=true,north=false,south=true,west=true]
+    setblock -2 48 64 waxed_weathered_copper_bars[east=true,north=false,south=true,west=true]
+    setblock -3 49 64 waxed_weathered_copper_bars[east=true,north=false,south=true,west=false]
+    setblock -3 49 64 waxed_exposed_copper_bars[east=true,north=false,south=true,west=false]
+    fill 65 50 61 65 48 63 mangrove_planks
+    fill 65 49 61 65 49 63 mangrove_fence[waterlogged=true]
+    data merge storage gimmick:sluice_gate {On:false}
+
+# 自由広場
+    fill -53 59 46 -49 59 51 sand replace air

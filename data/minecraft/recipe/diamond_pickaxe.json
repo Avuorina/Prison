@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [ "###", " | ", " | " ],
+    "key": { "#": "minecraft:diamond", "|": "minecraft:stick" },
+    "result": {
+        "id": "minecraft:diamond_pickaxe",
+        "count": 1,
+        "components": {
+            "minecraft:item_name": "手作りのダイヤのツルハシ",
+            "minecraft:can_break": { "blocks": "minecraft:waxed_oxidized_lightning_rod" },
+            "minecraft:lore": [ { "text": "錆びきった銅棒なら砕けそうだ。", "color": "gray", "italic": true } ],
+            "minecraft:tooltip_display": { "hidden_components": ["minecraft:can_break", "minecraft:attribute_modifiers"] }
+        }
+    }
+}

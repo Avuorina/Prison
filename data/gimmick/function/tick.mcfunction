@@ -26,3 +26,8 @@
     # 手に持った根付いた土に荒い土にしか置けないようにするをつける
         execute as @a if items entity @s weapon.mainhand rooted_dirt[!minecraft:can_place_on] run item modify entity @s weapon.mainhand {type:"minecraft:set_components",components:{"minecraft:can_place_on":{blocks:"minecraft:coarse_dirt"},"minecraft:tooltip_display":{hidden_components:["minecraft:can_place_on"]}}}
         execute as @a if items entity @s weapon.offhand rooted_dirt[!minecraft:can_place_on] run item modify entity @s weapon.offhand {type:"minecraft:set_components",components:{"minecraft:can_place_on":{blocks:"minecraft:coarse_dirt"},"minecraft:tooltip_display":{hidden_components:["minecraft:can_place_on"]}}}
+
+## 脱出
+   execute if block 60 49 70 minecraft:lever[powered=false] unless data storage gimmick:sluice_gate {On:true} run function gimmick:escape/
+   ## 爆薬
+    execute as @e[type=tnt] at @s run function gimmick:escape/tnt/tick

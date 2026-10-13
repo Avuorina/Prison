@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "redstone",
+    "pattern": [ "SSS", "SFS", "SSS" ],
+    "key": {
+        "S": "minecraft:sand",
+        "F": "minecraft:fire_charge"
+    },
+    "result": {
+        "id": "minecraft:tnt",
+        "count": 1,
+        "components": {
+            "minecraft:item_name": "手製の爆薬",
+            "minecraft:can_place_on": { "blocks": "minecraft:cinnabar" },
+            "minecraft:lore": [ { "text": "あの壁を吹き飛ばせそうだ。", "color": "gray", "italic": true } ],
+            "minecraft:tooltip_display": { "hidden_components": ["minecraft:can_place_on"] }
+        }
+    }
+}
