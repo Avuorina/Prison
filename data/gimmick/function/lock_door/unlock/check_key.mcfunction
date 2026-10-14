@@ -19,8 +19,7 @@
     execute if block ~ ~ ~ blue_concrete if items entity @a[tag=Inserted] weapon.mainhand *[custom_data~{Key:"blue"}] run tag @s add DoorCanEnter
     execute if block ~ ~ ~ red_concrete if items entity @a[tag=Inserted] weapon.mainhand *[custom_data~{Key:"red"}] run tag @s add DoorCanEnter
     execute if block ~ ~ ~ yellow_concrete if items entity @a[tag=Inserted] weapon.mainhand *[custom_data~{Key:"yellow"}] run tag @s add DoorCanEnter
-    # 紫は刑務作業中だけ
-        execute if block ~ ~ ~ purple_concrete if score #Labor Schedule matches 1 if items entity @a[tag=Inserted] weapon.mainhand *[custom_data~{Key:"purple"}] run tag @s add DoorCanEnter
+    execute if block ~ ~ ~ purple_concrete if items entity @a[tag=Inserted] weapon.mainhand *[custom_data~{Key:"purple"}] run tag @s add DoorCanEnter
 
 ## テストの鍵穴
     execute if block ~ ~ ~ command_block if items entity @a[tag=Inserted] weapon.mainhand minecraft:command_block run tag @s add DoorCanEnter
@@ -32,5 +31,3 @@
 ## 鍵が合わなかったら
     execute unless entity @s[tag=DoorCanEnter] run playsound block.iron_door.open master @a[tag=Inserted] ~ ~ ~ 1 2
     execute unless entity @s[tag=DoorCanEnter] run title @a[tag=Inserted] actionbar {"text":"開かない...","color":"red","bold":true}
-    # 紫の鍵を刑務作業の時間外に使った
-        execute unless entity @s[tag=DoorCanEnter] if block ~ ~ ~ purple_concrete if items entity @a[tag=Inserted] weapon.mainhand *[custom_data~{Key:"purple"}] run title @a[tag=Inserted] actionbar {text:"今は使えない時間だ...",color:"light_purple",bold:true}
