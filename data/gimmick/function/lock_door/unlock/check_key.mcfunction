@@ -30,4 +30,3 @@
 
 ## 鍵が合わなかったら
     execute unless entity @s[tag=DoorCanEnter] run playsound block.iron_door.open master @a[tag=Inserted] ~ ~ ~ 1 2
-    execute unless entity @s[tag=DoorCanEnter] run title @a[tag=Inserted] actionbar {"text":"開かない...","color":"red","bold":true}
