@@ -13,5 +13,7 @@
 ## 起床のとき、処刑の日を過ぎた囚人を処刑(全員いなくなったらゲーム終了)
     execute if score #Phase Schedule matches 0 run function gimmick:schedule/execution/check
     execute if score #Over Schedule matches 1 run return 0
+## 起床のとき、畑のチェストを補充
+    execute if score #Phase Schedule matches 0 run function gimmick:supply/farm_chest
 ## 告知
     function gimmick:schedule/phase/announce
