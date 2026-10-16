@@ -12,6 +12,10 @@
     execute if score #Current GameId matches 1.. as @a[team=Escaped] unless score @s GameId = #Current GameId run function gimmick:schedule/execution/rejoin
     execute if score #Current GameId matches 1.. as @a[team=Executed] unless score @s GameId = #Current GameId run function gimmick:schedule/execution/rejoin
 
+## 持ち物チェックゲート
+    execute as @a[gamemode=!spectator] at @s run function gimmick:gate/check
+    execute as @e[type=marker,tag=GateAlarm] at @s run function gimmick:gate/alarm_tick
+
 ## ドア
     # ドアが開いてる
         execute as @e[type=interaction,tag=DoorCanEnter,scores={DoorOpenTimer=0..}] run function gimmick:lock_door/close_door
