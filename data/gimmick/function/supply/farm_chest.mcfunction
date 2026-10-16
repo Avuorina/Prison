@@ -7,34 +7,36 @@
 # @within function gimmick:schedule/start
 # @within function gimmick:schedule/next
 
-## -54 60 38 : 種
+## -54 60 38 : 種(ニンジン・ジャガイモも)
     # 小麦の種
         item replace block -54 60 38 container.0 with wheat_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
         item replace block -54 60 38 container.1 with wheat_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
         item replace block -54 60 38 container.2 with wheat_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
         item replace block -54 60 38 container.3 with wheat_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
         item replace block -54 60 38 container.4 with wheat_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
-        item replace block -54 60 38 container.5 with wheat_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
-        item replace block -54 60 38 container.6 with wheat_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
-        item replace block -54 60 38 container.7 with wheat_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
-        item replace block -54 60 38 container.8 with wheat_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
     # ビートルートの種
+        item replace block -54 60 38 container.5 with beetroot_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
+        item replace block -54 60 38 container.6 with beetroot_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
+        item replace block -54 60 38 container.7 with beetroot_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
+        item replace block -54 60 38 container.8 with beetroot_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
         item replace block -54 60 38 container.9 with beetroot_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
-        item replace block -54 60 38 container.10 with beetroot_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
-        item replace block -54 60 38 container.11 with beetroot_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
-        item replace block -54 60 38 container.12 with beetroot_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
-        item replace block -54 60 38 container.13 with beetroot_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
-        item replace block -54 60 38 container.14 with beetroot_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
-        item replace block -54 60 38 container.15 with beetroot_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
-        item replace block -54 60 38 container.16 with beetroot_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
-        item replace block -54 60 38 container.17 with beetroot_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
+    # ニンジン
+        item replace block -54 60 38 container.10 with carrot[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
+        item replace block -54 60 38 container.11 with carrot[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
+        item replace block -54 60 38 container.12 with carrot[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
+        item replace block -54 60 38 container.13 with carrot[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
+        item replace block -54 60 38 container.14 with carrot[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
+    # ジャガイモ
+        item replace block -54 60 38 container.15 with potato[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
+        item replace block -54 60 38 container.16 with potato[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
+        item replace block -54 60 38 container.17 with potato[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
+        item replace block -54 60 38 container.18 with potato[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
     # カボチャの種
-        item replace block -54 60 38 container.18 with pumpkin_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
         item replace block -54 60 38 container.19 with pumpkin_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
         item replace block -54 60 38 container.20 with pumpkin_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
         item replace block -54 60 38 container.21 with pumpkin_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
+        item replace block -54 60 38 container.22 with pumpkin_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
     # スイカの種
-        item replace block -54 60 38 container.22 with melon_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
         item replace block -54 60 38 container.23 with melon_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
         item replace block -54 60 38 container.24 with melon_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
         item replace block -54 60 38 container.25 with melon_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
