@@ -12,8 +12,8 @@
     execute if score #Current GameId matches 1.. as @a[team=Escaped] unless score @s GameId = #Current GameId run function gimmick:schedule/execution/rejoin
     execute if score #Current GameId matches 1.. as @a[team=Executed] unless score @s GameId = #Current GameId run function gimmick:schedule/execution/rejoin
 
-## 持ち物チェックゲート
-    execute as @a[gamemode=!spectator] at @s run function gimmick:gate/check
+## 持ち物チェックゲート(看守は調べない)
+    execute as @a[gamemode=!spectator,team=!Guard] at @s run function gimmick:gate/check
     execute as @e[type=marker,tag=GateAlarm] at @s run function gimmick:gate/alarm_tick
 
 ## 監視カメラ

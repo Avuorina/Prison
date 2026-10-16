@@ -25,6 +25,8 @@
     scoreboard players set #Mode Schedule 0
     function gimmick:schedule/speed
     function gimmick:schedule/phase/set
+## 消灯の間だけ電球を消す
+    function gimmick:schedule/lights
     function gimmick:schedule/phase/announce
 ## 畑のチェストを補充(1日目の朝)
     function gimmick:supply/farm_chest
