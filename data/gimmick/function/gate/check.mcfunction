@@ -8,6 +8,9 @@
 # @within function gimmick:tick
 # @s プレイヤー(スペクテイター以外)
 
+## ジャンプ中(空中)は判定しない(ゲートの上で跳ねても鳴り直さないように)
+    execute if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{flags:{is_on_ground:false}}} run return 0
+
 ## ゲートの床の上にいなければ、乗っている印を外して終わり
     execute unless block ~ ~-0.5 ~ redstone_block unless block ~ ~-0.5 ~ command_block run return run tag @s remove OnGate
 
