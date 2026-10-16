@@ -39,6 +39,12 @@
         execute as @a if items entity @s weapon.mainhand rooted_dirt[!minecraft:can_place_on] run item modify entity @s weapon.mainhand {type:"minecraft:set_components",components:{"minecraft:can_place_on":{blocks:"minecraft:coarse_dirt"},"minecraft:tooltip_display":{hidden_components:["minecraft:can_place_on"]}}}
         execute as @a if items entity @s weapon.offhand rooted_dirt[!minecraft:can_place_on] run item modify entity @s weapon.offhand {type:"minecraft:set_components",components:{"minecraft:can_place_on":{blocks:"minecraft:coarse_dirt"},"minecraft:tooltip_display":{hidden_components:["minecraft:can_place_on"]}}}
 
+    # 手に持ったバケツ・水入りバケツに「土と水にだけ使える」を付ける(水を汲む・まくと付け直しが必要になるため)
+        execute as @a if items entity @s weapon.mainhand bucket[!minecraft:can_place_on] run item modify entity @s weapon.mainhand {type:"minecraft:set_components",components:{"minecraft:can_place_on":{blocks:["minecraft:dirt","minecraft:water"]},"minecraft:tooltip_display":{hidden_components:["minecraft:can_place_on"]}}}
+        execute as @a if items entity @s weapon.offhand bucket[!minecraft:can_place_on] run item modify entity @s weapon.offhand {type:"minecraft:set_components",components:{"minecraft:can_place_on":{blocks:["minecraft:dirt","minecraft:water"]},"minecraft:tooltip_display":{hidden_components:["minecraft:can_place_on"]}}}
+        execute as @a if items entity @s weapon.mainhand water_bucket[!minecraft:can_place_on] run item modify entity @s weapon.mainhand {type:"minecraft:set_components",components:{"minecraft:can_place_on":{blocks:["minecraft:dirt","minecraft:water"]},"minecraft:tooltip_display":{hidden_components:["minecraft:can_place_on"]}}}
+        execute as @a if items entity @s weapon.offhand water_bucket[!minecraft:can_place_on] run item modify entity @s weapon.offhand {type:"minecraft:set_components",components:{"minecraft:can_place_on":{blocks:["minecraft:dirt","minecraft:water"]},"minecraft:tooltip_display":{hidden_components:["minecraft:can_place_on"]}}}
+
 ## 脱出
    execute if block 60 49 70 minecraft:lever[powered=false] unless data storage gimmick:sluice_gate {On:true} run function gimmick:escape/
    ## 爆薬

@@ -26,3 +26,5 @@
     function gimmick:schedule/speed
     function gimmick:schedule/phase/set
     function gimmick:schedule/phase/announce
+## 畑のチェストを補充(1日目の朝)
+    function gimmick:supply/farm_chest
