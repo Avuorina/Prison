@@ -39,6 +39,10 @@
         scoreboard objectives add GateTimer dummy "ゲートの警報"
     # Schedule - 刑務所の時計(#Day 日付 / #Phase 予定 / #Timer 経過tick / #Labor 刑務作業中)
         scoreboard objectives add Schedule dummy "日課"
+    # CameraNo - 監視カメラの番号(カメラ・モニター・見ている看守に付ける)
+        scoreboard objectives add CameraNo dummy "カメラ番号"
+    # CameraID - カメラを見ている看守と、その場に残したダミーを結びつけるID
+        scoreboard objectives add CameraID dummy "カメラ用ID"
 ## ボスバー
     # prison:schedule - 看守にだけ見せる日課の残り時間
         bossbar add prison:schedule ""

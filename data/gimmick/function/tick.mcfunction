@@ -16,6 +16,9 @@
     execute as @a[gamemode=!spectator] at @s run function gimmick:gate/check
     execute as @e[type=marker,tag=GateAlarm] at @s run function gimmick:gate/alarm_tick
 
+## 監視カメラ
+    execute as @a[tag=CameraViewing] at @s run function player:camera/tick
+
 ## ドア
     # ドアが開いてる
         execute as @e[type=interaction,tag=DoorCanEnter,scores={DoorOpenTimer=0..}] run function gimmick:lock_door/close_door
