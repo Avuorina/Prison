@@ -1,6 +1,11 @@
 {
     "values" : [
         "minecraft:orange_concrete",
-        "minecraft:command_block"
+        "minecraft:command_block",
+        "minecraft:light_blue_concrete",
+        "minecraft:blue_concrete",
+        "minecraft:red_concrete",
+        "minecraft:yellow_concrete",
+        "minecraft:purple_concrete"
     ]
 }
