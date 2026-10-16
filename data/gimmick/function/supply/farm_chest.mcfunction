@@ -53,16 +53,16 @@
         item replace block -54 60 37 container.6 with stone_hoe[can_place_on={blocks:"minecraft:dirt"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 1
         item replace block -54 60 37 container.7 with stone_hoe[can_place_on={blocks:"minecraft:dirt"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 1
         item replace block -54 60 37 container.8 with stone_hoe[can_place_on={blocks:"minecraft:dirt"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 1
-    # バケツ
-        item replace block -54 60 37 container.9 with bucket 16
-        item replace block -54 60 37 container.10 with bucket 16
-        item replace block -54 60 37 container.11 with bucket 16
-        item replace block -54 60 37 container.12 with bucket 16
-        item replace block -54 60 37 container.13 with bucket 16
-        item replace block -54 60 37 container.14 with bucket 16
-        item replace block -54 60 37 container.15 with bucket 16
-        item replace block -54 60 37 container.16 with bucket 16
-        item replace block -54 60 37 container.17 with bucket 16
+    # バケツ(土と水にだけ使える)
+        item replace block -54 60 37 container.9 with bucket[can_place_on={blocks:["minecraft:dirt","minecraft:water"]},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 16
+        item replace block -54 60 37 container.10 with bucket[can_place_on={blocks:["minecraft:dirt","minecraft:water"]},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 16
+        item replace block -54 60 37 container.11 with bucket[can_place_on={blocks:["minecraft:dirt","minecraft:water"]},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 16
+        item replace block -54 60 37 container.12 with bucket[can_place_on={blocks:["minecraft:dirt","minecraft:water"]},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 16
+        item replace block -54 60 37 container.13 with bucket[can_place_on={blocks:["minecraft:dirt","minecraft:water"]},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 16
+        item replace block -54 60 37 container.14 with bucket[can_place_on={blocks:["minecraft:dirt","minecraft:water"]},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 16
+        item replace block -54 60 37 container.15 with bucket[can_place_on={blocks:["minecraft:dirt","minecraft:water"]},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 16
+        item replace block -54 60 37 container.16 with bucket[can_place_on={blocks:["minecraft:dirt","minecraft:water"]},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 16
+        item replace block -54 60 37 container.17 with bucket[can_place_on={blocks:["minecraft:dirt","minecraft:water"]},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 16
     # 水入りスプラッシュポーション
         item replace block -54 60 37 container.18 with splash_potion[potion_contents={potion:"minecraft:water"}] 1
         item replace block -54 60 37 container.19 with splash_potion[potion_contents={potion:"minecraft:water"}] 1
