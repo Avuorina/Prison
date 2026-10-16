@@ -62,6 +62,7 @@
 
 ## ゲームルール
     gamerule limited_crafting true
+    gamerule keep_inventory true
 
 ## ロード完了
     execute as @a at @s run playsound ui.button.click master @s ~ ~ ~ 1 1
