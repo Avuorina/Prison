@@ -35,6 +35,8 @@
         scoreboard objectives add SelectedNo dummy "選んだ囚人番号"
     # SentenceAdjust - 看守のボタン(1:−1日 / 2:+1日)
         scoreboard objectives add SentenceAdjust trigger "処刑の日の操作"
+    # GateTimer - 持ち物チェックゲートの警報が鳴ってからの時間
+        scoreboard objectives add GateTimer dummy "ゲートの警報"
     # Schedule - 刑務所の時計(#Day 日付 / #Phase 予定 / #Timer 経過tick / #Labor 刑務作業中)
         scoreboard objectives add Schedule dummy "日課"
 ## ボスバー
