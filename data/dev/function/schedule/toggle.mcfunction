@@ -3,10 +3,10 @@
 # 右クリックするたびに、時計の速さを切り替える
 #   等速 → 1/2 → 1/10 → 一時停止 → 等速 …
 #
-# @within function dev:schedule/use
+# @within function player:use_carrot_stick
 
 ## まだ始まっていない・ゲーム終了のあとは何もしない
-    execute unless score #Day Schedule matches 1.. run return run tellraw @s {text:"日課はまだ始まっていません(main:reset で開始)",color:"red"}
+    execute unless score #Day Schedule matches 1.. run return run tellraw @s {text:"日課はまだ始まっていません(ゲーム開始のアイテムで開始)",color:"red"}
     execute if score #Over Schedule matches 1 run return run tellraw @s {text:"ゲームは終了しています(main:reset でやり直し)",color:"red"}
 
 ## 次のモードへ
