@@ -51,12 +51,12 @@
         item replace block -54 60 37 container.4 with stone_hoe[can_place_on={blocks:"minecraft:dirt"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 1
         item replace block -54 60 37 container.5 with stone_hoe[can_place_on={blocks:"minecraft:dirt"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 1
     # 石のシャベル(土だけ掘れる)
-        item replace block -54 60 37 container.6 with stone_shovel[can_break={blocks:"minecraft:dirt"},tooltip_display={hidden_components:["minecraft:can_break","minecraft:attribute_modifiers"]}] 1
-        item replace block -54 60 37 container.7 with stone_shovel[can_break={blocks:"minecraft:dirt"},tooltip_display={hidden_components:["minecraft:can_break","minecraft:attribute_modifiers"]}] 1
-        item replace block -54 60 37 container.8 with stone_shovel[can_break={blocks:"minecraft:dirt"},tooltip_display={hidden_components:["minecraft:can_break","minecraft:attribute_modifiers"]}] 1
-        item replace block -54 60 37 container.9 with stone_shovel[can_break={blocks:"minecraft:dirt"},tooltip_display={hidden_components:["minecraft:can_break","minecraft:attribute_modifiers"]}] 1
-        item replace block -54 60 37 container.10 with stone_shovel[can_break={blocks:"minecraft:dirt"},tooltip_display={hidden_components:["minecraft:can_break","minecraft:attribute_modifiers"]}] 1
-        item replace block -54 60 37 container.11 with stone_shovel[can_break={blocks:"minecraft:dirt"},tooltip_display={hidden_components:["minecraft:can_break","minecraft:attribute_modifiers"]}] 1
+        item replace block -54 60 37 container.6 with stone_shovel[can_break={blocks:"minecraft:dirt"},lore=[{text:"土だけ掘れる",color:"gray",italic:false}],tooltip_display={hidden_components:["minecraft:can_break","minecraft:attribute_modifiers"]}] 1
+        item replace block -54 60 37 container.7 with stone_shovel[can_break={blocks:"minecraft:dirt"},lore=[{text:"土だけ掘れる",color:"gray",italic:false}],tooltip_display={hidden_components:["minecraft:can_break","minecraft:attribute_modifiers"]}] 1
+        item replace block -54 60 37 container.8 with stone_shovel[can_break={blocks:"minecraft:dirt"},lore=[{text:"土だけ掘れる",color:"gray",italic:false}],tooltip_display={hidden_components:["minecraft:can_break","minecraft:attribute_modifiers"]}] 1
+        item replace block -54 60 37 container.9 with stone_shovel[can_break={blocks:"minecraft:dirt"},lore=[{text:"土だけ掘れる",color:"gray",italic:false}],tooltip_display={hidden_components:["minecraft:can_break","minecraft:attribute_modifiers"]}] 1
+        item replace block -54 60 37 container.10 with stone_shovel[can_break={blocks:"minecraft:dirt"},lore=[{text:"土だけ掘れる",color:"gray",italic:false}],tooltip_display={hidden_components:["minecraft:can_break","minecraft:attribute_modifiers"]}] 1
+        item replace block -54 60 37 container.11 with stone_shovel[can_break={blocks:"minecraft:dirt"},lore=[{text:"土だけ掘れる",color:"gray",italic:false}],tooltip_display={hidden_components:["minecraft:can_break","minecraft:attribute_modifiers"]}] 1
     # バケツ(土と水にだけ使える)
         item replace block -54 60 37 container.12 with bucket[can_place_on={blocks:["minecraft:dirt","minecraft:water"]},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 16
         item replace block -54 60 37 container.13 with bucket[can_place_on={blocks:["minecraft:dirt","minecraft:water"]},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 16
