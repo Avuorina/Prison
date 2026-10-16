@@ -21,7 +21,7 @@
 
 ## 見ている間の看守
     tag @s add CameraViewing
-    item replace entity @s weapon.offhand with carrot_on_a_stick[item_name="カメラのリモコン",custom_data={CameraRemote:1b},lore=[{text:"右クリック：次のカメラ",color:"gray",italic:false},{text:"スニーク：戻る",color:"gray",italic:false}]]
+    item replace entity @s weapon.offhand with carrot_on_a_stick[item_name="カメラのリモコン",custom_data={CameraRemote:1b},custom_model_data={strings:["camera_remote"]},lore=[{text:"右クリック：次のカメラ",color:"gray",italic:false},{text:"スニーク：戻る",color:"gray",italic:false}]]
     effect give @s minecraft:invisibility infinite 0 true
     effect give @s minecraft:resistance infinite 4 true
 
