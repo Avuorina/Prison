@@ -12,11 +12,11 @@
     kill @e[type=item_display,tag=Camera]
     kill @e[type=interaction,tag=MonitorHitbox]
 
-## カメラ
-    summon item_display 30.5 63.0 86.5 {Tags:["Camera","CameraNew"],Rotation:[0f,20f]}
+## カメラ(1・2は北向き、3・4は南向き。どれも少し下を向く)
+    summon item_display 30.5 63.0 86.5 {Tags:["Camera","CameraNew"],Rotation:[180f,20f]}
     scoreboard players set @e[tag=CameraNew] CameraNo 1
     tag @e[tag=CameraNew] remove CameraNew
-    summon item_display 13.5 63.0 86.5 {Tags:["Camera","CameraNew"],Rotation:[0f,20f]}
+    summon item_display 13.5 63.0 86.5 {Tags:["Camera","CameraNew"],Rotation:[180f,20f]}
     scoreboard players set @e[tag=CameraNew] CameraNo 2
     tag @e[tag=CameraNew] remove CameraNew
     summon item_display 0.5 63.0 89.5 {Tags:["Camera","CameraNew"],Rotation:[0f,20f]}
