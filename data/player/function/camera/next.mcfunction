@@ -5,6 +5,7 @@
 # @within function player:use_carrot_stick
 # @s カメラを見ている看守
 
+    function player:camera/save_angle
     execute store result score #Count CameraNo if entity @e[type=item_display,tag=Camera]
     scoreboard players add @s CameraNo 1
     execute if score @s CameraNo > #Count CameraNo run scoreboard players set @s CameraNo 1

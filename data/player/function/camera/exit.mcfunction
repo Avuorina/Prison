@@ -5,6 +5,9 @@
 # @within function player:camera/tick
 # @s 看守
 
+## 見ていた方向をカメラに覚えさせる
+    function player:camera/save_angle
+
 ## ダミーを探す
     tag @s add CameraLeaving
     execute as @e[type=mannequin,tag=CameraBody] if score @s CameraID = @a[tag=CameraLeaving,limit=1] CameraID run tag @s add CameraBodyTarget
