@@ -69,6 +69,8 @@
 ## ゲームルール
     gamerule limited_crafting true
     gamerule keep_inventory true
+    # 経験値バーに他のプレイヤーの位置(ロケーターバー)を出さない
+    gamerule locator_bar false
 
 ## ロード完了
     execute as @a at @s run playsound ui.button.click master @s ~ ~ ~ 1 1
