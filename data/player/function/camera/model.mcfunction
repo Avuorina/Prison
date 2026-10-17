@@ -10,7 +10,6 @@
 #
 # @within function dev:install/camera
 # @within function dev:camera/aim
-# @within function player:camera/save_angle
 # @s 監視カメラ(item_display, tag=Camera)
 
 ## 今の模型を消す
