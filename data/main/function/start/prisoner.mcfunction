@@ -24,7 +24,7 @@
     execute if score @s PrisonerNo matches 5 run tp @s 19.5 60 77.5
     execute if score @s PrisonerNo matches 6 run tp @s 27.5 60 77.5
     execute if score @s PrisonerNo matches 7 run tp @s 35.5 60 77.5
-## 死んだら自分の房から
-    execute if score @s PrisonerNo matches 4..7 at @s run spawnpoint @s ~ ~ ~
+## 死んだら 55 62 20 から(処刑のときはスペクテイターになる)
+    spawnpoint @s 55 62 20
 ## 番号がない囚人は看守に知らせる
     execute unless score @s PrisonerNo matches 4..7 run tellraw @a[team=Guard] [{selector:"@s"},{text:" は囚人番号が登録されていません",color:"red"}]
