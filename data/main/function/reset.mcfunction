@@ -114,6 +114,9 @@
     data merge storage gimmick:sluice_gate {On:false}
     setblock 60 49 70 lever[face=wall,facing=north,powered=true]
 
+# 処刑場(床とレバー)
+    function gimmick:execution/trapdoor/close
+
 # 自由広場
     fill -53 59 46 -49 59 51 sand replace air
 
