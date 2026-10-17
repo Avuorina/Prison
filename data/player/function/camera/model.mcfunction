@@ -6,7 +6,7 @@
 #
 #   位置の調整
 #     ~ ~1.0 ~   : カメラ本体から看守の目までの高さ
-#     ^ ^ ^-0.2  : 目から後ろへ下げる距離
+#     ^ ^ ^-0.6  : 目から後ろへ下げる距離
 #
 # @within function dev:install/camera
 # @within function dev:camera/aim
@@ -18,4 +18,4 @@
     execute as @e[type=item_display,tag=CameraModel] if score @s CameraNo = #Target CameraNo run kill @s
 
 ## 置き直す
-    execute at @s rotated as @s positioned ~ ~1.0 ~ positioned ^ ^ ^-0.2 summon item_display run function player:camera/model_init
+    execute at @s rotated as @s positioned ~ ~1.0 ~ positioned ^ ^ ^-0.6 summon item_display run function player:camera/model_init
