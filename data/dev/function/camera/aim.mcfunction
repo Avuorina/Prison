@@ -7,4 +7,5 @@
 # @input No カメラ番号
 
     $execute rotated as @s as @e[type=item_display,tag=Camera,scores={CameraNo=$(No)}] positioned as @s run tp @s ~ ~ ~ ~ ~
+    $execute as @e[type=item_display,tag=Camera,scores={CameraNo=$(No)}] run function player:camera/model
     $tellraw @s {text:"カメラ $(No) の向きを合わせました",color:"green"}

@@ -2,6 +2,7 @@
 #
 # 監視カメラ4台と、モニター4台のクリック判定を置くぞ(置き直しもこれ)
 #   カメラ : item_display(見えない)。看守はこれに乗ってカメラの視点になる
+#   模型 : item_display(見た目用)。player:camera/model で、カメラごとに置く
 #   モニター : interaction。クリックすると同じ番号のカメラから見始める
 #   カメラの向きは dev:camera/aim {No:N} で、今自分が向いている方向に合わせる
 #
@@ -10,6 +11,7 @@
 
 ## 置き直すために消す
     kill @e[type=item_display,tag=Camera]
+    kill @e[type=item_display,tag=CameraModel]
     kill @e[type=interaction,tag=MonitorHitbox]
 
 ## カメラ(1・2は北向き、3・4は南向き。どれも少し下を向く)
@@ -25,6 +27,9 @@
     summon item_display -10.5 63.0 38.5 {Tags:["Camera","CameraNew"],Rotation:[0f,20f]}
     scoreboard players set @e[tag=CameraNew] CameraNo 4
     tag @e[tag=CameraNew] remove CameraNew
+
+## カメラの模型
+    execute as @e[type=item_display,tag=Camera] run function player:camera/model
 
 ## モニター(ブロックと同じ大きさの当たり判定)
     summon interaction 6.5 68 81.5 {Tags:["MonitorHitbox","CameraNew"],width:1.01f,height:1.01f}
