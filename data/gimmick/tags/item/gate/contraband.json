@@ -1,0 +1,32 @@
+{
+    "values": [
+        "#minecraft:pickaxes",
+        "#minecraft:shovels",
+        "#minecraft:axes",
+        "#minecraft:hoes",
+        "#minecraft:swords",
+        "minecraft:shears",
+
+        "minecraft:tnt",
+        "minecraft:flint_and_steel",
+        "minecraft:fire_charge",
+        "minecraft:gunpowder",
+        "minecraft:torch",
+
+        "minecraft:trial_key",
+        "minecraft:ominous_trial_key",
+
+        "minecraft:stick",
+        "#minecraft:planks",
+        "#minecraft:logs",
+        "minecraft:iron_ingot",
+        "minecraft:iron_nugget",
+        "minecraft:iron_chain",
+        "minecraft:diamond",
+        "minecraft:cobblestone",
+        "minecraft:flint",
+        "minecraft:redstone",
+        "minecraft:sand",
+        "minecraft:charcoal"
+    ]
+}
