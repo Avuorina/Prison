@@ -18,4 +18,4 @@
     execute as @e[type=item_display,tag=CameraModel] if score @s CameraNo = #Target CameraNo run kill @s
 
 ## 置き直す
-    execute at @s rotated as @s positioned ~ ~1.0 ~ positioned ^ ^ ^-0.6 summon item_display run function player:camera/model_init
+    execute at @s rotated as @s positioned ~ ~1.0 ~ positioned ^ ^ ^-0.2 summon item_display run function player:camera/model_init
