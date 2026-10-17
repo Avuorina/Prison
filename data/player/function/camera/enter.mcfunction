@@ -1,7 +1,8 @@
 #> player:camera/enter
 #
 # カメラを見始める
-#   1. その場にダミー(マネキン)を残す(戻ってくる場所。オフハンドの持ち物も預ける)
+#   1. その場にダミー(マネキン)を残す(戻ってくる場所。看守と同じ装備を見た目だけ着せる)
+#      持ち物は全部ストレージに預けて、看守を空っぽにする
 #   2. 看守を透明にして、オフハンドにカメラのリモコンを持たせる(右クリックの検知用)
 #   3. カメラに乗る
 #
@@ -15,9 +16,12 @@
 ## ダミーを残す
     tag @s add CameraViewer
     execute at @s summon mannequin run function player:camera/body_init
-    execute as @e[type=mannequin,tag=CameraBodyNew] run item replace entity @s weapon.offhand from entity @a[tag=CameraViewer,limit=1] weapon.offhand
+    execute as @e[type=mannequin,tag=CameraBodyNew] run function player:camera/body_dress
     tag @e[type=mannequin,tag=CameraBodyNew] remove CameraBodyNew
     tag @s remove CameraViewer
+
+## 持ち物を全部預ける(透明でも、手に持った物や防具は見えてしまうため)
+    function player:camera/inventory/save
 
 ## 見ている間の看守
     tag @s add CameraViewing

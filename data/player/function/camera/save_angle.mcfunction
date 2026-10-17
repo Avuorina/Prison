@@ -2,6 +2,7 @@
 #
 # 今見ているカメラに、看守が向いていた方向を覚えさせる
 #   次にこのカメラに乗ったとき、同じ方向から見始める(tp でカメラの向きになるため)
+#   (カメラの模型は player:camera/tick で、見ている間ずっと向きを合わせている)
 #
 # @within function player:camera/next
 # @within function player:camera/exit
