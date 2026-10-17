@@ -18,6 +18,8 @@
 
 ## 監視カメラ
     execute as @a[tag=CameraViewing] at @s run function player:camera/tick
+## 処刑場で死んだ囚人を処刑済みにする
+    execute as @a[tag=ExecutionInProgress,scores={Deaths=1..}] run function gimmick:schedule/execution/execute
 
 ## ドア
     # ドアが開いてる

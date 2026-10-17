@@ -25,8 +25,10 @@
         scoreboard objectives add EscapeTimer dummy "脱獄タイマー"
     # UseCarrotStick - 人参付きの棒を使った回数(デバッグ用アイテムの右クリック検知)
         scoreboard objectives add UseCarrotStick minecraft.used:minecraft.carrot_on_a_stick "人参付きの棒の使用回数"
-    # SentenceLeft - 囚人ごとの処刑までの残り日数(看守が手で減らす。0の翌朝に処刑)
+    # SentenceLeft - 囚人ごとの処刑までの残り日数(看守が手で減らす。0の翌朝から処刑の対象)
         scoreboard objectives add SentenceLeft dummy "処刑までの日数"
+    # Deaths - 死んだ回数(処刑場で溶岩に落ちたかの判定に使う)
+        scoreboard objectives add Deaths deathCount "死んだ回数"
     # GameId - 何回目のゲームの参加者か(リセット時にオフラインだった人を見分ける)
         scoreboard objectives add GameId dummy "ゲーム番号"
     # PrisonerNo - 囚人番号(プレイヤーと、房の扉の上の表示に付ける)
