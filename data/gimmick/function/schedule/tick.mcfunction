@@ -9,8 +9,9 @@
     execute if score #Step Schedule < #Interval Schedule run return 0
     scoreboard players set #Step Schedule 0
 
-## 時計を進める
-    scoreboard players add #Timer Schedule 1
+## 時計を進める(倍速のときは #Boost ずつ。未設定なら等速)
+    execute unless score #Boost Schedule matches 1.. run scoreboard players set #Boost Schedule 1
+    scoreboard players operation #Timer Schedule += #Boost Schedule
 ## フェーズの長さに達したら次のフェーズへ
     execute if score #Timer Schedule >= #Length Schedule run function gimmick:schedule/next
 ## 時間切れで止まったら、ここで終わり
