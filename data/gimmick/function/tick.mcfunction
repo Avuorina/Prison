@@ -42,9 +42,9 @@
     # 手に持った苗木に「土にしか植えられない」を付ける
         execute as @a if items entity @s weapon.mainhand oak_sapling[!minecraft:can_place_on] run item modify entity @s weapon.mainhand {type:"minecraft:set_components",components:{"minecraft:can_place_on":{blocks:"minecraft:dirt"},"minecraft:tooltip_display":{hidden_components:["minecraft:can_place_on"]}}}
         execute as @a if items entity @s weapon.offhand oak_sapling[!minecraft:can_place_on] run item modify entity @s weapon.offhand {type:"minecraft:set_components",components:{"minecraft:can_place_on":{blocks:"minecraft:dirt"},"minecraft:tooltip_display":{hidden_components:["minecraft:can_place_on"]}}}
-    # 手に持った根付いた土に荒い土にしか置けないようにするをつける
-        execute as @a if items entity @s weapon.mainhand rooted_dirt[!minecraft:can_place_on] run item modify entity @s weapon.mainhand {type:"minecraft:set_components",components:{"minecraft:can_place_on":{blocks:"minecraft:coarse_dirt"},"minecraft:tooltip_display":{hidden_components:["minecraft:can_place_on"]}}}
-        execute as @a if items entity @s weapon.offhand rooted_dirt[!minecraft:can_place_on] run item modify entity @s weapon.offhand {type:"minecraft:set_components",components:{"minecraft:can_place_on":{blocks:"minecraft:coarse_dirt"},"minecraft:tooltip_display":{hidden_components:["minecraft:can_place_on"]}}}
+    # 手に持った根付いた土に「土にしか置けない」を付ける
+        execute as @a if items entity @s weapon.mainhand rooted_dirt[!minecraft:can_place_on] run item modify entity @s weapon.mainhand {type:"minecraft:set_components",components:{"minecraft:can_place_on":{blocks:"minecraft:dirt"},"minecraft:tooltip_display":{hidden_components:["minecraft:can_place_on"]}}}
+        execute as @a if items entity @s weapon.offhand rooted_dirt[!minecraft:can_place_on] run item modify entity @s weapon.offhand {type:"minecraft:set_components",components:{"minecraft:can_place_on":{blocks:"minecraft:dirt"},"minecraft:tooltip_display":{hidden_components:["minecraft:can_place_on"]}}}
 
     # 手に持ったバケツ・水入りバケツに「土と水にだけ使える」を付ける(水を汲む・まくと付け直しが必要になるため)
         execute as @a if items entity @s weapon.mainhand bucket[!minecraft:can_place_on] run item modify entity @s weapon.mainhand {type:"minecraft:set_components",components:{"minecraft:can_place_on":{blocks:["minecraft:dirt","minecraft:water"]},"minecraft:tooltip_display":{hidden_components:["minecraft:can_place_on"]}}}
