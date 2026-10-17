@@ -1,7 +1,7 @@
 #> dev:schedule/toggle
 #
 # 右クリックするたびに、時計の速さを切り替える
-#   等速 → 1/2 → 1/10 → 一時停止 → 等速 …
+#   等速 → ×2 → ×5 → ×10 → 1/2 → 1/10 → 一時停止 → 等速 …
 #
 # @within function player:use_carrot_stick
 
@@ -11,12 +11,15 @@
 
 ## 次のモードへ
     scoreboard players add #Mode Schedule 1
-    execute if score #Mode Schedule matches 4.. run scoreboard players set #Mode Schedule 0
+    execute if score #Mode Schedule matches 7.. run scoreboard players set #Mode Schedule 0
     function gimmick:schedule/speed
     playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1
 
 ## 使った人に知らせる
     execute if score #Mode Schedule matches 0 run tellraw @s {text:"[日課] 等速",color:"green"}
-    execute if score #Mode Schedule matches 1 run tellraw @s {text:"[日課] 速さ 1/2",color:"yellow"}
-    execute if score #Mode Schedule matches 2 run tellraw @s {text:"[日課] 速さ 1/10",color:"gold"}
-    execute if score #Mode Schedule matches 3 run tellraw @s {text:"[日課] 一時停止",color:"red"}
+    execute if score #Mode Schedule matches 1 run tellraw @s {text:"[日課] 速さ ×2",color:"aqua"}
+    execute if score #Mode Schedule matches 2 run tellraw @s {text:"[日課] 速さ ×5",color:"aqua"}
+    execute if score #Mode Schedule matches 3 run tellraw @s {text:"[日課] 速さ ×10",color:"dark_aqua"}
+    execute if score #Mode Schedule matches 4 run tellraw @s {text:"[日課] 速さ 1/2",color:"yellow"}
+    execute if score #Mode Schedule matches 5 run tellraw @s {text:"[日課] 速さ 1/10",color:"gold"}
+    execute if score #Mode Schedule matches 6 run tellraw @s {text:"[日課] 一時停止",color:"red"}
