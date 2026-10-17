@@ -3,7 +3,7 @@
 # 囚人を懲罰房へテレポート
 #   -31 60 78 と -39 60 78 のどちらかにランダム。行き先は看守に知らせる
 #
-# @within function player:handcuffs/hit
+# @within function player:handcuffs/catch
 # @s 手錠で殴られた囚人
 
 ## 音(捕まった場所)

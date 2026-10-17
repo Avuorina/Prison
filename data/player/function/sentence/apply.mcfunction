@@ -8,6 +8,8 @@
 ## 残り日数を増減(0より下にはしない)
     scoreboard players operation @s SentenceLeft += #Delta _
     execute if score @s SentenceLeft matches ..-1 run scoreboard players set @s SentenceLeft 0
+## 恩赦で1日以上に戻ったら、処刑の対象から外す
+    execute if score @s SentenceLeft matches 1.. run tag @s remove ExecutionDue
 
 ## 本人に知らせる
     function gimmick:schedule/execution/remaining

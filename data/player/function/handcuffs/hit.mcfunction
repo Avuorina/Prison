@@ -13,5 +13,5 @@
 
 ## 今殴られた囚人(このtickにダメージを受けて、殴ったのが自分)を探す
     tag @s add HandcuffUser
-    execute as @a[team=Prisoner,distance=..8,nbt={HurtTime:10s}] if function player:handcuffs/is_target run function player:handcuffs/arrest
+    execute as @a[team=Prisoner,distance=..8,nbt={HurtTime:10s}] if function player:handcuffs/is_target run function player:handcuffs/catch
     tag @s remove HandcuffUser

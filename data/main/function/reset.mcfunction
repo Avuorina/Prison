@@ -114,10 +114,17 @@
     data merge storage gimmick:sluice_gate {On:false}
     setblock 60 49 70 lever[face=wall,facing=north,powered=true]
 
+# 処刑場(床とレバー)
+    function gimmick:execution/trapdoor/close
+
 # 自由広場
     fill -53 59 46 -49 59 51 sand replace air
 
 ## 囚人
+    # 処刑の対象・処刑中の印を外す
+        tag @a remove ExecutionDue
+        tag @a remove ExecutionInProgress
+        tag @a remove ExecutionGuard
     # 脱獄した人・処刑された人を囚人に戻す
         gamemode adventure @a[team=Escaped]
         gamemode adventure @a[team=Executed]
