@@ -45,6 +45,9 @@
         scoreboard objectives add CameraNo dummy "カメラ番号"
     # CameraID - カメラを見ている看守と、その場に残したダミーを結びつけるID
         scoreboard objectives add CameraID dummy "カメラ用ID"
+## 処刑場の座標(まだ決まっていなければ、決めた値を入れる。dev:execution/set_prisoner / set_guard で上書きできる)
+    execute unless data storage gimmick:execution prisoner run data modify storage gimmick:execution prisoner set value {x:0.494d,y:61.0d,z:125.199d,yaw:-179.34f,pitch:5.54f}
+    execute unless data storage gimmick:execution guard run data modify storage gimmick:execution guard set value {x:0.517d,y:60.0d,z:121.457d,yaw:1.41f,pitch:0.59f}
 ## ボスバー
     # prison:schedule - 看守にだけ見せる日課の残り時間
         bossbar add prison:schedule ""
