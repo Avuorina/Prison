@@ -44,13 +44,13 @@
         item replace block -54 60 38 container.26 with melon_seeds[can_place_on={blocks:"minecraft:farmland"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 64
 
 ## -54 60 37 : 道具
-    # 石のクワ(土だけ耕せる)
-        item replace block -54 60 37 container.0 with stone_hoe[can_place_on={blocks:"minecraft:dirt"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 1
-        item replace block -54 60 37 container.1 with stone_hoe[can_place_on={blocks:"minecraft:dirt"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 1
-        item replace block -54 60 37 container.2 with stone_hoe[can_place_on={blocks:"minecraft:dirt"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 1
-        item replace block -54 60 37 container.3 with stone_hoe[can_place_on={blocks:"minecraft:dirt"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 1
-        item replace block -54 60 37 container.4 with stone_hoe[can_place_on={blocks:"minecraft:dirt"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 1
-        item replace block -54 60 37 container.5 with stone_hoe[can_place_on={blocks:"minecraft:dirt"},tooltip_display={hidden_components:["minecraft:can_place_on"]}] 1
+    # 石のクワ(土だけ耕せる・作物を収穫できる。苗の茎は壊せない)
+        item replace block -54 60 37 container.0 with stone_hoe[can_place_on={blocks:"minecraft:dirt"},can_break={blocks:["minecraft:wheat","minecraft:carrots","minecraft:potatoes","minecraft:beetroots","minecraft:melon","minecraft:pumpkin"]},lore=[{text:"作物を収穫できる",color:"gray",italic:false}],tooltip_display={hidden_components:["minecraft:can_place_on","minecraft:can_break"]}] 1
+        item replace block -54 60 37 container.1 with stone_hoe[can_place_on={blocks:"minecraft:dirt"},can_break={blocks:["minecraft:wheat","minecraft:carrots","minecraft:potatoes","minecraft:beetroots","minecraft:melon","minecraft:pumpkin"]},lore=[{text:"作物を収穫できる",color:"gray",italic:false}],tooltip_display={hidden_components:["minecraft:can_place_on","minecraft:can_break"]}] 1
+        item replace block -54 60 37 container.2 with stone_hoe[can_place_on={blocks:"minecraft:dirt"},can_break={blocks:["minecraft:wheat","minecraft:carrots","minecraft:potatoes","minecraft:beetroots","minecraft:melon","minecraft:pumpkin"]},lore=[{text:"作物を収穫できる",color:"gray",italic:false}],tooltip_display={hidden_components:["minecraft:can_place_on","minecraft:can_break"]}] 1
+        item replace block -54 60 37 container.3 with stone_hoe[can_place_on={blocks:"minecraft:dirt"},can_break={blocks:["minecraft:wheat","minecraft:carrots","minecraft:potatoes","minecraft:beetroots","minecraft:melon","minecraft:pumpkin"]},lore=[{text:"作物を収穫できる",color:"gray",italic:false}],tooltip_display={hidden_components:["minecraft:can_place_on","minecraft:can_break"]}] 1
+        item replace block -54 60 37 container.4 with stone_hoe[can_place_on={blocks:"minecraft:dirt"},can_break={blocks:["minecraft:wheat","minecraft:carrots","minecraft:potatoes","minecraft:beetroots","minecraft:melon","minecraft:pumpkin"]},lore=[{text:"作物を収穫できる",color:"gray",italic:false}],tooltip_display={hidden_components:["minecraft:can_place_on","minecraft:can_break"]}] 1
+        item replace block -54 60 37 container.5 with stone_hoe[can_place_on={blocks:"minecraft:dirt"},can_break={blocks:["minecraft:wheat","minecraft:carrots","minecraft:potatoes","minecraft:beetroots","minecraft:melon","minecraft:pumpkin"]},lore=[{text:"作物を収穫できる",color:"gray",italic:false}],tooltip_display={hidden_components:["minecraft:can_place_on","minecraft:can_break"]}] 1
     # 石のシャベル(土だけ掘れる)
         item replace block -54 60 37 container.6 with stone_shovel[can_break={blocks:"minecraft:dirt"},lore=[{text:"土だけ掘れる",color:"gray",italic:false}],tooltip_display={hidden_components:["minecraft:can_break","minecraft:attribute_modifiers"]}] 1
         item replace block -54 60 37 container.7 with stone_shovel[can_break={blocks:"minecraft:dirt"},lore=[{text:"土だけ掘れる",color:"gray",italic:false}],tooltip_display={hidden_components:["minecraft:can_break","minecraft:attribute_modifiers"]}] 1
