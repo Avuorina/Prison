@@ -16,4 +16,4 @@
 ## マスターキー
     item replace entity @s hotbar.2 with ominous_trial_key[item_name={text:"マスターキー",color:"gold"},custom_data={Key:"master"},custom_model_data={strings:["key_master"]}]
 ## 日課の速さ
-    item replace entity @s hotbar.8 with carrot_on_a_stick[item_name="日課の速さ",custom_data={SchedulePause:1b},enchantment_glint_override=true,lore=[{text:"右クリック：等速 → 1/2 → 1/10 → 一時停止",color:"gray",italic:false}]]
+    item replace entity @s hotbar.8 with carrot_on_a_stick[item_name="日課の速さ",custom_data={SchedulePause:1b},custom_model_data={strings:["schedule_speed"]},enchantment_glint_override=true,lore=[{text:"右クリック：等速 → 1/2 → 1/10 → 一時停止",color:"gray",italic:false}]]
