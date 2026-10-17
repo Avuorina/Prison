@@ -6,7 +6,7 @@
 #
 #   位置の調整
 #     ~ ~1.0 ~   : カメラ本体から看守の目までの高さ
-#     ^ ^ ^-1.05  : 目から後ろへ下げる距離
+#     ^ ^ ^-0.2  : 目から後ろへ下げる距離
 #
 # @within function dev:install/camera
 # @within function dev:camera/aim
